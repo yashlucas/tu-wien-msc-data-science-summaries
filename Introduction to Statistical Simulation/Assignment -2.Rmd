@@ -1,0 +1,278 @@
+---
+title: "Exercise 2 - Random Number Generation through CDF and acceptance-rejection
+  sampling"
+subtitle: "107.330 - Statistical Simulation and Computerintensive Methods, WS24"
+author: "12433688 - Yash Lucas"
+date: "`r format(Sys.time(), '%d.%m.%Y')`"
+toc: TRUE
+toc_depth: 1
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+\newpage
+
+## Task 1
+
+Summarise the concept of pseudo-random number generation with Linear Congruential Random Number Generation Algorithm using the available code examples from the course to create a working code example and simulate one pseudo-random sample.
+
+Try out and compare different values of m, a to illustrate the behavior of the method as described on slide 18.
+
+The LCG (Linear congruential Generator) algorithm is a simple and very well known PRNG (pseudo-random number generator). It works by recursively applying a modulo to some large integer $m$. The algorithm is defined by the recurrence relation $x_{n+1} = (a \cdot x_n + c) \mod m$.
+
+Where:
+
+- $m$ is the modulus (a large integer)
+- $a$ is the multiplier ($\approx \sqrt{m}$)
+- $c$ is the increment ($0 \leq c < m$)
+- $d$ is the seed or starting value
+
+Below, the Linear Congruential Random Number Generation Algorithm is presented. 
+- The function takes as initial values the sample n, 
+- the m and a parameter, which defines the range of numbers
+- the increment c 
+- the starting value d and the 
+- a1 where uniform pseudo random numbers are generated.
+
+```{r}
+# function for Linear Congruential Random Number Generator
+
+lc_gen <- function(n, m, a, c=0, d){
+  a1 <- numeric(n)
+  for (i in 1:n){
+    d <- (a * d + c) %% m
+    a1[i] <- d / m
+  }
+  return(a1)
+}
+```
+
+I have used  the function below to test 3 samples
+
+Sample -1
+```{r}
+n <- 500
+m <-  12433688 
+a <- round(sqrt(m)-2,2)
+c <-2
+d<- 25
+sm1<-lc_gen(n,m,a,c,d)
+round((sm1),3)
+```
+
+Sample - 2
+```{r}
+n <- 500
+m <- 50
+a <- 4
+c <- 1
+d <- 3
+sm2<-lc_gen(n,m,a,c,d)
+round((sm2),3)
+
+```
+Sample - 3
+```{r}
+n <- 500
+m <- 37
+a <- 19
+c <- 1
+d <- 3
+sm3<-lc_gen(n,m,a,c,d)
+round((sm3),3)
+
+```
+If we compare the above 3 samples, we get the follwoing histogram
+```{r}
+hist(round((sm1),3),main="Result based on Parameters",xlab="values",ylab="Frequency")
+hist(round((sm2),3),main="Result based on Parameters",xlab="values",ylab="Frequency")
+hist(round((sm3),3),main="Result based on Parameters",xlab="values",ylab="Frequency")
+```
+If we compare the above 3 samples, the 1st and 3rd sample has good parameters and the 2nd has poor parameters.
+
+We can observe that the choice of parameters significantly impacts the quality of the generated pseudo-random numbers.
+
+- $m$: A large prime number for $m$ generally produces better results, maximizing the cycle length of the sequence.
+- $a$: The multiplier $a$ should be carefully chosen, with values close to $\sqrt{m}$ often working well.
+- $c$: With poor parameters, the sequence may repeat quickly, leading to non-random behavior.
+
+## Task 2
+The exponential distribution has the following cdf: $F(x) = 1 - e^{-\lambda x}$
+
+Assume you can generate easily uniform random variables. How can you obtain then a random sample from the exponential distribution?
+
++ Write down the mathematical expression for this.
+
++ Write an R function which takes as input the number of samples required and the parameter $\lambda$. Use the function runif to create the uniform random variables.
+
++ For three different values of $\lambda$ create 1000 random samples and evaluate the quality of your random number generator using qq-plots which compare against a real exponential distribution with the specified parameter $\lambda$. 
+
+In order to obtain a random sample from the exponential distribution, we are going to use the inversion method. We have the cdf F(x) and we proceed to the next 3 steps:
+
+1. Compute the quantile function $F_x^{-1}$ 
+2. Generate a u ~ unif[0, 1]
+3. Make the transformation $x = F_x^{-1}$
+
+Therefore, the mathematical expression for the cdf F(x) will be: $x = -\frac{1}{\lambda}\ln(1-F)$
+
+
+```{r}
+exponential_samp <- function(n, lambda) {
+	u <- runif(n) 
+	x <- -1/lambda * log(1 - u)
+	return(x)
+}
+```
+
+After, I have taken 3 different values for the $\lambda$ and 1000 random samples.
+For the $\lambda$, the values I have used are 0.5, 1 and 1.5 are used.
+
+We have also used rexp(n,rate)$^{-1}$ where the rate is the rate parameter $\lambda$ and n is the number of samples. This function is prebulit in R.
+
+I have also also generated 3 QQ-plots, for each $\lambda$. The plots helps us compare the quality of our custom-generated exponential samples against the theoretical exponential distributions.
+
+
+```{r}
+library(ggplot2)
+
+generate_qqplot <- function(rate_param) {
+	# Generate samples using the exponential_samp function
+	df <- data.frame(custom_samples = exponential_samp(1000, rate_param), theoretical_samples = rexp(1000, rate = rate_param))
+	ggplot(df, aes(sample = custom_samples)) +
+		stat_qq(distribution = qexp, dparams = list(rate = rate_param)) +
+		stat_qq_line(distribution = qexp, dparams = list(rate = rate_param)) +
+		ggtitle(paste("Exponential Distribution - lambda = ", rate_param)) +
+		xlab("Theoretical Quantiles") +
+		ylab("Sample Quantiles") +
+		theme_minimal() +  # Apply a clean theme
+		theme(
+			plot.title = element_text(color = "darkblue", size = 14, face = "bold", hjust = 0.5)
+		)
+}
+
+# New variable names for the lambda values
+rate_params <- c(0.5, 1, 1.5)  # Changed from lambda_values to rate_params
+
+# Generate and display QQ plots with the new variable names
+plots <- lapply(rate_params, generate_qqplot)
+for (plot in plots) {
+	print(plot)
+}
+
+```
+
+From the above QQ-plots, it can be directly analyzed  that our custom random number generator is producing the samples that closely matches the theoretical exponential distribution(repx) for all three values of $\lambda$ that we have tested.
+
+The points in QQ-plots lies in the same area where the line exist.
+
+## Task 3
+
+The Beta distribution has the following pdf: $f(x;\alpha,\beta) = \frac{\Gamma{(\alpha+\beta)}}{\Gamma{(\alpha)}\Gamma{(\beta)}}x^{\alpha-1}(1-x)^{\beta-1}$
+
+Write a function which uses an acceptance-rejection approach to sample from a beta distribution. Argue what is a natural candidate for a proposal distribution.
+
++ Focus first on the case where both parameters of the beta distribution are 2. Find what is a good constant to keep the rejection proportion small.
+
++ Write a function based on this approach to sample from an arbitrary beta distribution and which adapts the constant to the user specified parameters assuming that both parameters are larger than 1.
+
+All functions above should take as input the number of samples to be created and if applicable also the parameters of the beta distribution.
+
+Evaluate the quality of your different functions visually.
+
+
+The f(x) is known, according to the instructions of the exercise, and it is a beta distribution with the following pdf: $f(x;\alpha,\beta) = \frac{\Gamma{(\alpha+\beta)}}{\Gamma{(\alpha)}\Gamma{(\beta)}}x^{\alpha-1}(1-x)^{\beta-1}$. Now, we have to find a density function g(x) so that the following inequality is fulfilled ($f(x) \le cg(x)$). Therefore, we are able to perform the acceptance-rejection method and generate the proper values. In our implementation, the uniform distribution has been chosen. Thus, the g(x) will be: $g(x) = \frac{1}{b-a}$ where $x \in [a,b]$. 
+
+The uniform distribution, despite not being as efficient as other distributions, is characterized for its simplicity and its flexibility and versatility. In our case, we know the boundaries of the x variable, which are [0,1], since we have the pdf of a beta distribution. Thus, we can easily apply g(x). In terms of flexibility, by slightly changing the parameters a and b from $f(x;\alpha,\beta)$, our curve will be different every time which means that we can easily adapt g(x) by choosing an appropriate value for the parameter c. 
+
+Below, the acceptance rejection function is presented.
+
+
+These functions provide a flexible way to sample from Beta distributions using the acceptance-rejection method. The efficiency of the method depends on how close the proposal distribution is to the target distribution. For Beta distributions with parameters far from 1, the rejection rate may become high, and other methods (like inverse transform sampling) might be more efficient.
+
+```{r}
+library(ggplot2)
+library(gridExtra)
+
+# Function to sample from Beta distribution using rejection sampling
+sample_beta <- function(n, alpha, beta) {
+    if (alpha <= 1 || beta <= 1) {
+        stop("Invalid parameters: alpha and beta must be greater than 1.")
+    }
+    
+    samples <- numeric(n)
+    accepted <- 0
+
+    mode <- (alpha - 1) / (alpha + beta - 2)
+ 
+    c <- dbeta(mode, alpha, beta)
+    
+    while (accepted < n) {
+        y <- runif(1)  
+        u <- runif(1)
+        
+        if (u <= dbeta(y, alpha, beta) / c) {
+            accepted <- accepted + 1
+            samples[accepted] <- y
+        }
+    }
+    
+    return(samples)
+}
+```
+
+This function adjusts the constant $c$ to the user-specified parameters $\alpha$ and $\beta$ of the Beta distribution. It calculates the mode of the Beta distribution and uses the density at that point as the value for $c$. The $Uniform(0,1)$ distribution remains a natural choice for the proposal distribution for any $Beta(\alpha, \beta)$ with $\alpha > 1$ and $\beta > 1$, as the Beta distribution is always defined on $[0,1]$.
+
+Generating samples
+```{r}
+s1_2_2<-round(s1 <- sample_beta(500, 2, 2),3)
+s2_5_6<-round(s2<- sample_beta(500, 5, 6),3)
+
+
+# Generate theoretical samples for comparison
+be_2_2<-round(be1 <- rbeta(500, 2, 2),3)
+be_5_6<-round(be2 <- rbeta(500, 5, 6),3)
+
+```
+
+Creating QQ-Plots and Histograms for Beta samples
+```{r}
+
+p_qq_1 <- function(samples, theoretical, alpha, beta) {
+    ggplot(data.frame(samples = samples, theoretical = theoretical), aes(sample = samples)) +
+        stat_qq(distribution = qbeta, dparams = list(shape1 = alpha, shape2 = beta)) +
+        stat_qq_line(distribution = qbeta, dparams = list(shape1 = alpha, shape2 = beta), color = "yellow") +
+        ggtitle(paste("QQ-Plot for Beta(", alpha, ", ", beta, ")", sep = "")) +
+        xlab("Theoretical Quantiles")+
+        ylab("Sample Quantiles")
+}
+
+p_hist_1 <- function(samples, alpha, beta) {
+    ggplot(data.frame(samples = samples), aes(x = samples)) +
+        geom_histogram(aes(y = ..density..), bins = 20, color = "black") +
+        stat_function(fun = dbeta, args = list(shape1 = alpha, shape2 = beta), color = "blue", size = 1) +
+        ggtitle(paste("Histogram of Samples from Beta(", alpha, ", ", beta, ")", sep = "")) +
+        xlab("Samples") +
+        ylab("Density")
+}
+```
+
+Visualizing plots for Beta (2,2) and (5,6)
+```{r}
+
+plot1_qq <- p_qq_1(s1_2_2, be_2_2, 2, 2)
+plot2_qq <- p_qq_1(s2_5_6, be_5_6, 5, 6)
+
+plot1_hist <- p_hist_1(s1_2_2, 2, 2)
+plot2_hist <- p_hist_1(s2_5_6, 5, 6)
+
+grid.arrange(plot1_qq, plot1_hist, plot2_qq, plot2_hist, nrow = 2)
+
+```
+
++ QQ Plot for Beta Distribution (2,2): The points in the QQ plot lie very close to a straight line, indicating a strong linear relationship between the theoretical quantiles of the Beta distribution and the sample quantiles. This suggests that the sample data likely comes from a Beta distribution.
+
++ QQ Plot for Beta Distribution (5,6): The points in the QQ plot also align closely with a straight line, although there is a slight deviation in the upper tail. This tail divergence may suggest some asymmetry or heavier tails in the actual data compared to the theoretical Beta distribution, despite the overall pattern suggesting a Beta distribution.
+
+
