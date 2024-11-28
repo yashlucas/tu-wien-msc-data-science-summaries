@@ -1,0 +1,448 @@
+---
+title: "Exercise 4 - Sample distribution and Central Limit Theorem"
+subtitle: "107.330 - Statistical Simulation and Computerintensive Methods, WS24"
+author: "12433727 - Anukriti Sharma"
+date: "`r format(Sys.time(), '%d.%m.%Y')`"
+output:
+  pdf_document:
+    latex_engine: xelatex
+
+---
+## Task 1
+
+Consider the 12 sample data points: 4.94 5.06 4.53 5.07 4.99 5.16 4.38 4.43 4.93 4.72 4.92 4.96
+
+```{r}
+dp <- c(4.94, 5.06, 4.53, 5.07, 4.99, 
+                 5.16, 4.38, 4.43, 4.93, 4.72, 
+                 4.92, 4.96)
+```
+
+### Task 1.1
+
+How many possible bootstrap samples are there, if each bootstrap sample has the same size as the original?
+
+The formula used here is $n^n$
+```{r}
+length <- length(dp)
+possible_bootstrap_samples <- length ^length
+options(scipen = 999)
+cat("The possible number of bootstrap samples are",possible_bootstrap_samples)
+```
+### Task 1.2
+
+Compute the mean and the median of the original sample.
+
+The original sample here is dp
+```{r}
+samp1_m<-mean(dp)
+samp1_me<-median(dp)
+cat("The mean of the original sample is ", samp1_m, "and the median is ",samp1_me)
+```
+### Task 1.3
+Create 2000 bootstrap samples and compute their means.
+
+```{r}
+set.seed(12433727) 
+samp2 <- 2000
+samp2_m <- replicate(samp2, mean(sample(dp, replace = TRUE)))
+```
+
+
+### Task 1.3.1
+Compute the mean on the first 20 bootstrap means.
+Below we have used index which helps us to ensure that only mean for 1st 20 bootstrap means are used.
+```{r}
+samp2_m20<-mean(samp2_m[1:20])
+cat("The mean for first 20 bootstrap means is",samp2_m20)
+```
+
+### Task 1.3.2
+Compute the mean of the first 200 bootstrap means.
+
+```{r}
+samp2_m200<-mean(samp2_m[1:200])
+cat("The mean for first 200 bootstrap means is",samp2_m200)
+```
+
+### Task 1.3.3
+Compute the mean based on all 2000 bootstrap means.
+
+```{r}
+samp2_m2000<-mean(samp2_m[1:2000])
+cat("The mean for first 2000 bootstrap means is",samp2_m2000)
+```
+### Task 1.3.4
+Visualise the distribution all the different bootstrap means to the sample mean. Does the Central Limit Theorem kick in?
+
+
+```{r, echo=TRUE, fig.width=7, fig.height=5.5, fig.cap="Distribution of the means", warning=FALSE}
+library(ggplot2)
+ggplot(data.frame(Means = samp2_m), aes(x = Means)) +
+  geom_histogram(
+    binwidth = 0.01, 
+    aes(fill = ..count..), 
+    color = "white", 
+    alpha = 0.85  
+  ) +
+  scale_fill_gradient(
+    low = "#56B1F7", 
+    high = "#132B43", 
+    name = "Frequency"
+  ) +
+  geom_vline(
+    xintercept = samp1_m, 
+    color = "red", 
+    linetype = "dashed", 
+    linewidth = 1
+  ) + 
+  labs(
+    title = "Distribution of Bootstrap Sample Means vs. Sample Mean",
+    subtitle = "Illustrating Central Limit Theorem through Bootstrap Sampling",
+    x = "Sample Means",
+    y = "Frequency"
+  ) +
+  theme_classic(base_size = 14) + 
+  theme(
+    plot.title = element_text(hjust = 0.5, size = 20, face = "bold", color = "black"), 
+    plot.subtitle = element_text(hjust = 0.5, size = 14, color = "darkgrey"), 
+    axis.title.x = element_text(size = 12, face = "bold", color = "black"),
+    axis.title.y = element_text(size = 12, face = "bold", color = "black"),
+    axis.text = element_text(size = 11, color = "black"),
+    legend.position = "right", 
+    legend.key.size = unit(0.8, "cm"), 
+    legend.title = element_text(face = "bold"),
+    panel.grid.major = element_line(color = "grey90") 
+  ) +
+  annotate(
+    "text", 
+    x = samp1_m, 
+    y = max(table(cut(samp2_m, breaks = 100))) * 0.9,
+    label = "Sample Mean", 
+    color = "red", 
+    angle = 90, 
+    size = 5, 
+    fontface = "italic"
+  ) 
+```
+The sample mean is in the middle of the histogram's symmetrical, bell-shaped distribution. This is in line with the Central Limit Theorem (CLT), which asserts that as the number of bootstrap samples increases, the distribution of sample means will converge to a normal distribution regardless of the original data's distribution.
+
+### Task 1.3.5
+Based on the three different bootstrap sample lengths in 3. compute the corresponding 0.025 and 0.975 quantiles. Compare the three resulting intervals against each other and the "true" confidence interval of the mean under the assumption of normality. (Use for example the function t.test to obtain the 95% percent CI based on asympotic considerations for the mean.)
+
+Below, subsets of the bootstrap means have been created for different sample sizes.
+```{r}
+sample_m_l <- list(samp2_m[1:20], samp2_m[1:200], samp2_m[1:2000])
+names(sample_m_l) <- c("Sample_20", "Sample_200", "Sample_2000")
+quantiles <- data.frame(sapply(sample_m_l, function(means) quantile(means, c(0.025, 0.975))))
+knitr::kable(quantiles, format = "markdown", caption = "Mean 0.025 and 0.975 Quantiles")
+```
+The lowest and upper boundaries of the bootstrap mean distribution are shown by the 2.5% and 97.5% quantiles for each sample size (20, 200, and 2000) in the above table.
+
+
+Below we calculate "true" confidence interval of the mean under the assumption of normality.
+
+```{r}
+confidence_int <- t.test(dp)$conf.int
+cat("The 'true' confidence interval of the mean is:\n", confidence_int)
+```
+
+The output shows that the 95% confidence interval for the mean of dp is approximately [4.674, 5.007]. This means that we are 95% confident that the true population mean lies within this interval.
+
+## Task 1.4
+
+Create 2000 bootstrap samples and compute their medians
+```{r}
+set.seed(12433727) 
+sample2_me <- replicate(samp2, median(sample(dp, replace = TRUE)))
+```
+
+### Task 1.4.1
+
+Compute the median on the first 20 bootstrap medians.
+
+```{r}
+sample20_me<-median(sample2_me[1:20])
+cat("The median for first 20 bootstrap median is",sample20_me)
+```
+
+### Task 1.4.2
+
+Compute the mean of the first 200 bootstrap medians.
+
+```{r}
+sample200_me<-median(sample2_me[1:200])
+cat("The median for first 200 bootstrap median is",sample200_me)
+```
+
+### Task 1.4.3
+
+Compute the mean based on all 2000 bootstrap medians.
+
+```{r}
+sample2000_me<-median(sample2_me[1:2000])
+cat("The median for first 2000 bootstrap median is",sample2000_me)
+```
+
+### Task 1.4.4
+
+Visualise the distribution all the different bootstrap medians to the sample median.
+```{r}
+library(ggplot2)
+ggplot(data.frame(Medians = sample2_me), aes(x = Medians)) +
+  geom_density(fill = "#6A5ACD", color = "black", alpha = 0.7, linewidth = 1) +
+  geom_vline(xintercept = samp1_me, color = "#FF4500", linetype = "dashed", linewidth = 1.2) +
+  labs(
+    title = "Density Plot of Bootstrap Sample Medians vs. Sample Median",
+    subtitle = paste("Dashed line shows the original sample median:", round(sample2_me, 2)),
+    x = "Bootstrap Sample Medians",
+    y = "Density"
+  ) +
+  theme_classic(base_size = 15) +
+  theme(
+    plot.title = element_text(face = "bold", hjust = 0.5, color = "#1E1E1E"),
+    plot.subtitle = element_text(hjust = 0.5, color = "#4F4F4F"),
+    axis.title.x = element_text(face = "bold", color = "#1E1E1E"),
+    axis.title.y = element_text(face = "bold", color = "#1E1E1E"),
+    axis.text = element_text(color = "#4F4F4F"),
+    plot.background = element_rect(fill = "#FAFAFA")
+  ) +
+  annotate(
+    "text", x = samp1_me, y = 0.8 * max(density(sample2_me)$y), 
+    label = "Sample Median", color = "#FF4500", size = 5, fontface = "italic", angle = 90, vjust = -0.5
+  )
+```
+
+
+### Task 1.4.5
+
+Based on the three different bootstrap sample lengths in 3. compute the corresponding 0.025 and 0.975 quantiles. Compare the three resulting intervals against each other.
+
+```{r}
+sample_list_me <- list(sample2_me[1:20],
+                         sample2_me[1:200],
+                        sample2_me[1:2000])
+names(sample_list_me) <- c("Sample 20","Sample 200","Sample 2000")
+
+quantiles <- data.frame(sapply(sample_list_me, function(x) quantile(x, c(0.025, 0.975))))
+knitr::kable(quantiles, format = "markdown",caption = "Median 0.025 and 0.975 Quantiles")
+```
+For each sample size, the 2.5% and 97.5% quantiles reflect the lowest and upper boundaries of the 95% confidence range for the bootstrap medians. These intervals help us understand the variability in the median estimates across different bootstrap samples and can be used to approximate the population median's confidence interval.
+
+A consistent and stable confidence interval is provided by larger bootstrap samples (200 and 2000), indicating that they are probably closer to the confidence interval of the genuine population median.
+
+## Task 2
+
+We wish to explore the effect of outliers on the outcomes of Bootstrap Sampling.
+
+### Task 2.1
+
+Set your seed to 1234. And then sample 1960 points from a standard normal distribution to create the vector x.clean then sample 40 observations from uniform(4,5) and denote them as x.cont. The total data is x <- c(x.clean,x.cont). After creating the sample set your seed to your immatriculation number.
+
+```{r}
+set.seed(1234)
+x.clean <- rnorm(1960)
+x.cont <- runif(40,4,5)
+x <- c(x.clean,x.cont)
+set.seed(12433727)
+```
+
+### Task 2.2
+
+Estimate the median, the mean and the trimmed mean with alpha = 0.05 for x and x.clean.
+
+
+```{r}
+t_mean <- data.frame(
+  row.names = c("x","x_clean"),
+  Median = c(median(x),median(x.clean)),
+  Mean = c(mean(x), mean(x.clean)),
+  Trimmed_Mean = c(mean(x, trim = 0.05), mean(x.clean, trim = 0.05))
+)
+knitr::kable(t_mean, format = "markdown",
+             caption = "Mean, Median, Trimmed Mean Results")
+```
+### Task 2.3
+
+Use nonparametric bootstrap (for x and x.clean) to calculate
+
++ standard error
++ 95 percentile CI of all 3 estimators.
+
+
+```{r}
+bootstrap_summary <- function(data, n = 10000, trim = 0.05) {
+  bootstrap_medians <- replicate(n, median(sample(data, replace = TRUE)))
+  bootstrap_means <- replicate(n, mean(sample(data, replace = TRUE)))
+  bootstrap_trimmed_means <- replicate(n, mean(sample(data, replace = TRUE), trim = trim))
+  
+  standard_errors <- sapply(
+    list(bootstrap_medians, bootstrap_means, bootstrap_trimmed_means), 
+    sd
+  )
+  
+  confidence_intervals <- sapply(
+    list(bootstrap_medians, bootstrap_means, bootstrap_trimmed_means), 
+    function(samples) quantile(samples, c(0.025, 0.975))
+  )
+  
+  summary_table <- data.frame(
+    Method = c("Median", "Mean", "Trimmed Mean"),
+    Standard_Error = standard_errors,
+    CI_Lower = confidence_intervals[1, ],
+    CI_Upper = confidence_intervals[2, ]
+  )
+  
+  return(summary_table)
+}
+```
+
+
+```{r}
+knitr::kable(bootstrap_summary(x), format = "markdown",
+             caption = "Standard error and 95% CI for the estimators (mean, median, and trimmed mean) for the x dataset.")
+```
+Median Estimator: Based on the bootstrap samples, the median could logically range from -0.0466 to 0.0652 in the population. The median estimator's standard error for the x dataset is comparatively small (0.0282), and the 95% confidence interval contains both positive and negative values.
+
+Mean Estimator: The 95% confidence range indicates that the true mean, based on the bootstrap samples, is probably between 0.0324 and 0.1351; the standard error for the mean estimator is likewise minimal (0.0260).
+
+Trimmed Mean Estimator: The trimmed mean estimator's 95% confidence interval shows that the trimmed mean may vary from slightly negative values (-0.0093) to positive values (0.0820), with a standard error of 0.0233.
+
+```{r}
+knitr::kable(bootstrap_summary(x.clean), format = "markdown",
+             caption = "Standard error and 95% CI for the estimators (mean, median, and trimmed mean) for the x_clean dataset.")
+```
+
+Median Estimator: The standard error of the median estimator (0.0274) is similar to that of x. The 95% CI for the median in the x.clean dataset contains negative values (ranging from -0.0679 to 0.0390), which suggests a wider range for the median estimate.
+
+The mean estimator's standard error (0.0222) is the lowest of all the estimators for x.clean, indicating that the mean is computed more precisely. The 95% CI does, however, include negative values (-0.0496 to 0.0375), suggesting that the mean could be close to zero or slightly negative, depending on the bootstrap samples.
+
+Trimmed Mean Estimator: The standard error of the trimmed mean estimator (0.0225) is similar to that of the x.clean mean estimator. Even if the true trimmed mean is negative or close to zero, it will still decline.
+
+### Task 2.4
+
+Use parametric bootstrap (based on x and x.clean) to calculate
+
++ bias
++ standard error
++ 95 percentile CI
++ bias corrected estimate
+
+for the mean and the trimmed mean.
+
+When estimating the scale of the of the data in the “robust” case use the mad.
+
+```{r}
+para_bootstrap <- function(d, n, a = 0.05) {
+  b_samples <- replicate(n, rnorm(length(d), mean = mean(d), sd = mad(d)))
+  b_means <- colMeans(b_samples)
+  b_trimmed <- apply(b_samples, 2, function(x) mean(x, trim = 0.05))
+  m_d <- mean(d)
+  
+  data.frame(
+    Metric = c("Mean", "Trimmed Mean"),
+    Bias = c(mean(b_means) - m_d, mean(b_trimmed) - m_d),
+    SE = c(sd(b_means), sd(b_trimmed)),
+    CI_Lower = c(quantile(b_means, a / 2), quantile(b_trimmed, a / 2)),
+    CI_Upper = c(quantile(b_means, 1 - a / 2), quantile(b_trimmed, 1 - a / 2)),
+    Bias_Corrected = c(m_d - (mean(b_means) - m_d), m_d - (mean(b_trimmed) - m_d))
+  )
+}
+
+```
+This function calculates bias, standard error, confidence intervals, and bias-corrected estimates for both the mean and trimmed mean.
+
+```{r}
+set.seed(12433727)
+n <- 10000
+r_x <- para_bootstrap(x, n, a = 0.05)
+
+rownames(r_x) <- c("Mean", "Trimmed Mean")
+
+knitr::kable(
+  r_x,
+  format = "markdown",
+  caption = "Bootstrap Results for x"
+)
+
+```
+This chunk calculates the bootstrap metrics for the dataset x.
+```{r}
+r_x_clean <- para_bootstrap(x.clean, n, a = 0.05)
+
+rownames(r_x_clean) <- c("Mean", "Trimmed Mean")
+
+knitr::kable(
+  r_x_clean,
+  format = "markdown",
+  caption = "Bootstrap Results for x.clean"
+)
+
+```
+
+This chunk calculates the bootstrap metrics for the cleaned dataset x.clean..
+
+
+### Task 2.5
+
+Compare and summarize your findings with tables and graphically.
+
+```{r}
+knitr::kable(
+  r_x,
+  format = "markdown",
+  caption = "Comparison for x"
+)
+
+knitr::kable(
+  r_x_clean,
+  format = "markdown",
+  caption = "Comparison for x.clean"
+)
+
+
+```
+For dataset x, both the mean and trimmed mean have positive bias, indicating that the bootstrap estimates are slightly higher than the original sample estimates.
+For dataset x.clean, both the mean and trimmed mean have negative bias, suggesting that the bootstrap estimates are slightly lower than the original sample estimates.
+
+### Compare and summarize your findings with tables and graphically.
+```{r}
+library(ggplot2)
+
+r_x$Dataset <- "x"
+r_x_clean$Dataset <- "x.clean"
+
+combined <- rbind(r_x, r_x_clean)
+
+ggplot(combined, aes(x = Metric, y = Bias, fill = Dataset)) +
+  geom_bar(stat = "identity", position = "dodge") +
+  labs(title = "Bias Comparison", y = "Bias", x = "Metric") +
+  theme_minimal()
+
+ggplot(combined, aes(x = Metric, y = SE, fill = Dataset)) +
+  geom_bar(stat = "identity", position = "dodge") +
+  labs(title = "Standard Error Comparison", y = "Standard Error", x = "Metric") +
+  theme_minimal()
+
+```
+
+Bias:
+
+- The cleaned dataset (x.clean) has a bias closer to zero compared to the raw dataset (x). This suggests that cleaning the data reduces systematic overestimation or underestimation of the mean and trimmed mean.
+- The biases are very small in magnitude overall, so both datasets yield reasonable estimates.
+
+Standard Error:
+- The cleaned dataset (x.clean) has slightly lower variability (SE) than the raw dataset (x), indicating a more stable estimation process after cleaning.
+- The similarity in SE between the mean and trimmed mean suggests that trimming did not significantly affect variability in this case.
+
+
+## Task 3
+
+Based on the above tasks and your lecture materials, explain the methodology of bootstrapping for the construction of conifdence intervals and parametric or non-parametric tests.
+
+
+Non-parametric bootstrapping is a method that generates a fresh sample of data from the original via replacement. Because each element of the original data set is equally weighted, its discrete distribution means that any outliers will significantly affect the final samples and the analysis that follows.
+In contrast to the non-parametric method, parametric bootstrapping accounts for the distinct features of the population's distribution. Since the parameters are calculated using the given distribution, they are dependent on the empirical sample.
+
+Confidence intervals can be constructed using either the bootstrap sample estimates or the quantiles of the normal distribution.
+One of the bootstrapping options can be used to estimate the mean, median, and trimmed mean of the distribution that we estimated in this exercise. This can be accomplished by creating a large number of samples that yield findings that are as close to reality as feasible. The mean of the samples' medians, for example, can then be used to calculate the statistics of these samples. The acquired results can then be used to calculate the confidence intervals.
