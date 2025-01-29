@@ -1,0 +1,2391 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/yashl/ontologies/2024/9/test"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/yashl/ontologies/2024/9/test">
+    <Prefix name="" IRI="http://www.semanticweb.org/yashl/ontologies/2024/9/test/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Accessible_Service"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CAT"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#City_Airport_Train"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Color"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Customer_Service_Center"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Erdberg"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Info_and_Ticket_Points"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#No_elevator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_0005c4b5_5ed3_4071_8444_9e1671f8b4cf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_024f807f_c444_47d4_880a_782faef3554c"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_025643b7_9113_498f_ba78_cdb5862ffc6f"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_030b48bf_e021_4b1f_9f94_1fe7d2086c8e"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_033f749c_6989_4444_8923_3c2df5e3ee5e"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_05517b93_171b_47b4_8ad5_68efa97c0880"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_061c16c1_46fc_48c3_8e2f_95f47a709aac"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_0699dfe3_2a19_4d3b_aba0_35cb9d9810ca"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_06d06243_00da_411e_9d7c_2829697f50f5"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_07505f82_4994_4df0_8441_84fc2ce2e8cb"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_0782922a_33e0_44ab_bb7b_fd1fcd700681"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_0828e527_561e_4f4d_bef5_49c2e0bb09e9"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_0b4cf629_85f9_4c34_9533_5d21a31ea656"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_0bd071d4_519a_453c_8d25_6fa8430208cd"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_0f134fc4_a1e7_49ba_b9e4_7b90a94b4229"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_11145231_a408_43a9_b976_131fb55dc8f2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_12a15ea0_865b_4351_98a0_fc4a800224f0"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_133861d9_eaad_4ce8_97c8_67efc9aa26d4"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_13cb2921_f4ad_4f9d_a9d4_1173a2566475"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_14d0f402_9ba8_434a_8ebc_b44e7ab3e9fe"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_1859ccb3_56d5_4011_bc55_6b2e20e05ffd"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_18b2f5df_e79a_4e73_ae48_567b34fcfc08"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_18b5ddb7_9a67_4c70_be45_a97bedcfdc3f"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_1a137edb_5e96_4048_9f53_2dc074bd570c"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_1a2f5ef7_9872_43f9_967b_4605efafaf0b"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_1df1e4f1_bbe8_42e6_aae6_5a7b35d03f64"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_1e6f0b28_4a4d_4255_a7c6_948b36397471"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_1f39e432_e4a0_4997_a3c9_57edee0e0440"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_1f765229_43b2_4b23_bc4a_1682528d32e0"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_1f9f0480_200f_4f98_b6ae_fe0033e6e4a5"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_2492c3fe_7a27_4d56_8dff_d05ea1841f0b"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_24db5dfd_5f41_4fdb_a16b_e1840b4a9f23"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_28e9db29_9a51_43c8_be16_41196a9c7bf0"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_2adedf63_6459_4d30_8fde_fff5c49dec26"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_2b447681_975c_4c55_9b39_d195315596d0"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_2ed2839b_4cfd_4c5a_8b04_18b06ab29593"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_34dbcc83_46e4_4c14_972c_1118ffe49b95"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_34eb950a_4083_419a_a4ee_698f609200c4"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_3915c9b6_892d_45ea_b39e_489d6566b583"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_3a9529a4_1825_4654_ad0d_f0ee28c181f5"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_3aa65f6a_ce67_44c3_8382_d0cdc03bb713"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_3b5128de_5e3f_43e8_bcf4_955c7bffa318"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_3b78190d_b46d_4db6_9261_8e6cd6146101"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_3fd734cb_359b_40fd_8987_d4f8f2ee5be0"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_407e4d21_2ebe_446a_8872_034cec038152"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_43f59671_f98b_4eae_a339_5f36623ee138"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_46abb34c_62f5_49be_8929_e3ad03f5e0d9"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_49ef5ea5_f75d_49f1_bfb1_55f996c4d338"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_4a49db94_5775_4042_b8ac_ca545c0f4af2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_4a61e85d_fc28_4ddf_a0c9_f1d6254d2a5c"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_4cbbcc5a_01b6_471b_b7bd_655529394f01"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_4fd595ac_4a0e_40b0_827e_13f603aee918"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_510ce951_d993_4708_a6f0_89739c3493e2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_53cf93b4_3e25_4526_9a1a_71f6dedb95b2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_572c29c0_9c2c_4737_85be_b0cfdea04cd2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_5758501d_273c_49c3_b016_4a3f9d1cb28a"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_57b469a9_89b3_47c0_b799_3d6552692607"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_5976a6b9_f2d5_45bd_9833_3dc57d1ebe89"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_59864ae8_253a_44fe_873d_543894a495e7"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_5a13158b_2b35_45c6_8336_319c5db249aa"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_5a5c2232_9914_476b_ba84_c7d484ae7a4e"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_5ae6dc6d_7a69_4bb7_8846_583bd068c7a2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_5bad646b_4836_43fa_856b_fcf0d0913f0c"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_5c489a28_4d21_4880_90b4_b8c77e3a90c2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_5c6355be_37c2_4974_a3a2_43b94e2d27bc"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_5db36571_ebc4_4cdd_bd5c_960633701ec4"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_5dfff50e_89a2_480a_8c1b_197942ca5e4b"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_60c412ab_972c_4f10_ab88_0fe1bea96e2e"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_6307afb6_eaf7_4460_a730_d613a42ca14a"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_6464808b_892b_4c81_a3d4_dad9f54cfd6d"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_646f6838_24d0_4b88_8e71_f629f51c17c0"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_64e9e47c_8b92_42fb_a8c9_8238a2540c0a"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_653fb03f_f290_4afd_8511_8413f8885da5"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_6a9bb972_4569_4539_bba0_7453fe828152"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_6cc9ccf3_a1c0_4b68_90da_f39b724589e0"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_6e695a1c_2195_4af6_9c1c_9858dba205f7"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_6fff2ef5_4b59_4dae_80f6_6243d7c414f3"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_72769ffc_c6ac_4d4d_8408_f32127bd1bbe"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_72da1166_775d_4d84_b595_07aa143568af"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_782c9d8d_76ca_4f30_ae87_01de9ac180e2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_7c7d90fd_f5ce_427f_8c21_77ea5a00a4d1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_7f2ae272_147d_4f90_9fdb_1db155bd7d3d"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_81753f01_36d4_40d0_96c1_457458cebf0d"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_8251cd6d_6759_44db_acb3_a843ec418f92"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_84057c89_ec09_44c2_927e_03a28bd62d69"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_84fb2290_4512_40ca_a052_1036e42da68d"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_860aea39_4573_4afd_87c9_06360dace28e"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_875eec07_f6d5_4c73_a27f_e0ae4d27de30"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_88763d50_01ca_46b4_a3b6_e94c881ff50c"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_899b885d_4ef8_4d00_a8b8_4bd41773c9ef"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_89a871f1_12f9_4aff_b08d_709b6cde9645"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_8b4070dc_f799_48ba_bcbf_7992bc5c1288"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_8c54a28f_b54b_43aa_969d_769b6940827d"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_911ff1db_4ddf_475e_ab2e_feddf401428d"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_91d4bd6e_109b_407e_82ea_9b805d4a520a"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_92447f0c_aaa6_4416_98d0_0b25a1bc7638"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_96bef21e_d522_4186_9b99_3705be1ae686"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_96fe5b5f_beaa_43ef_8966_17e9e5b345ff"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_994331bc_f667_4be8_bbe0_1851195f20ed"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_9a347bc1_ff27_47ae_99b2_8ce451e2d7ca"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_9b8ce75f_99cb_4db8_b9c2_52ffbd951ad5"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_9c80cc76_9027_4931_94f3_ac0b1b95bf6e"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_9c8a5927_fd80_49f9_b51d_098f4f074684"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_9cec0606_22c6_4017_b7c3_9ba033d29028"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_9e1f1692_9a2c_43ac_ad9f_69a0cab6dcae"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_9f1b9502_ef96_4207_901f_de575925abd8"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_9f43ed26_0ff4_4044_ba76_1d7682e3026b"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_9fc9d389_0046_4c68_a068_cca61438276c"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_a149fa65_ef7b_4894_a93e_00e75640fd5e"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_a1ffc734_1500_4ce5_9a03_43a3a0a21385"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_a259f917_f6c6_4c95_9a48_ca597818f94a"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_a71a41cb_ce60_45a7_a94f_bba78c2e5e93"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_abcdfa94_2ddb_42fa_a490_e68fda34c7ea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_ac94d89f_2a2a_43fe_8fcc_305bccd46b35"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_adb55e3d_900e_435c_9a5d_9245f4fc88b1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_ae614cbd_1951_409b_92cd_6aef7a93fcd8"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_aed9a894_e015_4af8_8a37_1bb082bd4345"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_b13569af_8262_46a9_a60f_1681984040f4"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_b7b02317_a0ea_4c67_9139_778bf35a0fcb"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_b86e8ed9_52fa_479c_af8d_b964d15471da"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_b8810957_f0a2_441c_b3d3_ad52fedbb355"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_b9210843_2491_4d17_985f_814277a01cd8"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_b9709684_eb88_4d31_9b01_4d70dcd17357"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_b995a8a7_61c1_4367_b7a5_0ddb178b81e7"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_ba70054e_3eed_4689_beb9_b20902a4d699"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_bb35e4b0_7e7c_4d1b_9377_7d2656abd9db"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_bb650523_6fa5_4665_8b43_525456bb081c"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_beb74084_f95d_4c33_946d_3fdb81cad828"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_befc32ce_5dac_4bdc_baf7_c1b26359e472"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_c112ef8a_963c_4fcc_bd86_3106ebcd72d3"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_c2b44363_7bc3_4cff_a196_464b4cdd41ae"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_c3191268_91cc_4bbe_9084_651d58ccd83c"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_c3ee115e_ba5c_4205_ac3d_e3b568bd7b96"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_c56fdece_7021_487d_94a3_fe3f52db0fab"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_c6eccf5b_4ced_49cf_a8b3_6b5f69c9badb"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_c8974321_867f_44b0_a141_89aa5513bdd8"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_cade38f2_4000_46bd_b7e6_c9e123e06750"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_cf4e7385_a0c6_4d40_ba2a_aaedf49f049c"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_d2c47fd9_2a34_42d8_b921_c9adc5c2e2ec"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_d4241493_78ca_4bb0_8d29_a138d6a32d52"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_d49afb8b_37b4_47fa_851d_3eb128dd518d"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_d56451c2_ceb5_4a0c_b5ac_f923d8a16156"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_d67792d8_90cd_47e0_a13c_b0c48d99d2b2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_d69c494f_e162_40a8_9f1f_2b36ca7e29a6"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_d6cba1a3_7099_4387_9e75_34a69f370101"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_da50e375_6f41_4188_9faa_c59beeea77e7"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_db056f49_cc19_40ef_922a_314b8afc8609"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_e0da3e1d_3ac7_45f4_9618_f3c7929c4775"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_e35229a4_a553_4b2e_83e9_b87c6004c6ff"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_e3db96c8_5a37_4f50_8fa4_b96a6b883086"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_e439333d_0568_43f3_ae48_e22a069a83a5"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_e4b2d1b7_4e92_4a5a_9f33_6fbe3882fa67"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_e58987ec_ff0d_492a_a2d0_a1a566073592"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_e82a53b6_5713_46be_891d_d9dc08207b2d"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_ea3add6b_f50a_47cd_b0b6_b706171988e8"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_eb2b8a96_6a18_40a4_8575_bcd2117df816"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_ecfdb9cb_1425_46ee_89e5_d473e8691202"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_eea5c013_f457_467b_a615_c5b4bf4457cc"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_eec54ebc_1b0a_43e2_8e8d_1aac34ad3882"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_f4f7f56a_3cbe_4662_9816_ce74c39d80a2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_f51b6963_9bb9_4823_9d02_bc7aa5d367e5"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_f52aeba5_5348_4bd7_9090_b8ef2a0443de"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_fef7004c_0486_47c9_8276_caf06afb7f68"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Park_and_Ride"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Restrooms"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Service_Centre"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Spittelau"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#U-Bahn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#connectedTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRestroom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isLocatedAt"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#providesAccessTo"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasAccessibilityFeature"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasColorCode"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasOperatingHours"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasParkingCapacity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasRestroomType"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#Accessible_Service"/>
+        <ObjectUnionOf>
+            <Class IRI="#Customer_Service_Center"/>
+            <Class IRI="#Service_Centre"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#City_Airport_Train"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#providesAccessTo"/>
+            <Class IRI="#U-Bahn"/>
+        </ObjectMinCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#OWLClass_34eb950a_4083_419a_a4ee_698f609200c4"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#connectedTo"/>
+            <Class IRI="#OWLClass_0828e527_561e_4f4d_bef5_49c2e0bb09e9"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#OWLClass_3a9529a4_1825_4654_ad0d_f0ee28c181f5"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#connectedTo"/>
+            <Class IRI="#OWLClass_9f43ed26_0ff4_4044_ba76_1d7682e3026b"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#OWLClass_3b5128de_5e3f_43e8_bcf4_955c7bffa318"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#hasRestroom"/>
+            <Class IRI="#OWLClass_3b5128de_5e3f_43e8_bcf4_955c7bffa318"/>
+        </ObjectMinCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#OWLClass_3b5128de_5e3f_43e8_bcf4_955c7bffa318"/>
+        <DataHasValue>
+            <DataProperty IRI="#hasColorCode"/>
+            <Literal>Purple</Literal>
+        </DataHasValue>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#OWLClass_3b5128de_5e3f_43e8_bcf4_955c7bffa318"/>
+        <DataHasValue>
+            <DataProperty IRI="#hasParkingCapacity"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </DataHasValue>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#OWLClass_860aea39_4573_4afd_87c9_06360dace28e"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#hasRestroom"/>
+            <Class IRI="#OWLClass_860aea39_4573_4afd_87c9_06360dace28e"/>
+        </ObjectMinCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#OWLClass_860aea39_4573_4afd_87c9_06360dace28e"/>
+        <DataHasValue>
+            <DataProperty IRI="#hasColorCode"/>
+            <Literal>Brown</Literal>
+        </DataHasValue>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#OWLClass_860aea39_4573_4afd_87c9_06360dace28e"/>
+        <DataHasValue>
+            <DataProperty IRI="#hasParkingCapacity"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </DataHasValue>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#OWLClass_8b4070dc_f799_48ba_bcbf_7992bc5c1288"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#connectedTo"/>
+            <Class IRI="#OWLClass_c6eccf5b_4ced_49cf_a8b3_6b5f69c9badb"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#OWLClass_a71a41cb_ce60_45a7_a94f_bba78c2e5e93"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#hasRestroom"/>
+            <Class IRI="#OWLClass_a71a41cb_ce60_45a7_a94f_bba78c2e5e93"/>
+        </ObjectMinCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#OWLClass_a71a41cb_ce60_45a7_a94f_bba78c2e5e93"/>
+        <DataHasValue>
+            <DataProperty IRI="#hasColorCode"/>
+            <Literal>Red</Literal>
+        </DataHasValue>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#OWLClass_a71a41cb_ce60_45a7_a94f_bba78c2e5e93"/>
+        <DataHasValue>
+            <DataProperty IRI="#hasParkingCapacity"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </DataHasValue>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#OWLClass_beb74084_f95d_4c33_946d_3fdb81cad828"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#hasRestroom"/>
+            <Class IRI="#OWLClass_beb74084_f95d_4c33_946d_3fdb81cad828"/>
+        </ObjectMinCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#OWLClass_beb74084_f95d_4c33_946d_3fdb81cad828"/>
+        <DataHasValue>
+            <DataProperty IRI="#hasColorCode"/>
+            <Literal>Green</Literal>
+        </DataHasValue>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#OWLClass_beb74084_f95d_4c33_946d_3fdb81cad828"/>
+        <DataHasValue>
+            <DataProperty IRI="#hasParkingCapacity"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </DataHasValue>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#OWLClass_d6cba1a3_7099_4387_9e75_34a69f370101"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#hasRestroom"/>
+            <Class IRI="#OWLClass_d6cba1a3_7099_4387_9e75_34a69f370101"/>
+        </ObjectMinCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#OWLClass_d6cba1a3_7099_4387_9e75_34a69f370101"/>
+        <DataHasValue>
+            <DataProperty IRI="#hasColorCode"/>
+            <Literal>Orange</Literal>
+        </DataHasValue>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#OWLClass_d6cba1a3_7099_4387_9e75_34a69f370101"/>
+        <DataHasValue>
+            <DataProperty IRI="#hasParkingCapacity"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </DataHasValue>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#OWLClass_da50e375_6f41_4188_9faa_c59beeea77e7"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#connectedTo"/>
+            <Class IRI="#OWLClass_eec54ebc_1b0a_43e2_8e8d_1aac34ad3882"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Restrooms"/>
+        <ObjectUnionOf>
+            <Class IRI="#OWLClass_c2b44363_7bc3_4cff_a196_464b4cdd41ae"/>
+            <Class IRI="#OWLClass_d49afb8b_37b4_47fa_851d_3eb128dd518d"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#CAT"/>
+        <Class IRI="#City_Airport_Train"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Erdberg"/>
+        <Class IRI="#Customer_Service_Center"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_0005c4b5_5ed3_4071_8444_9e1671f8b4cf"/>
+        <Class IRI="#OWLClass_3b5128de_5e3f_43e8_bcf4_955c7bffa318"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_024f807f_c444_47d4_880a_782faef3554c"/>
+        <Class IRI="#OWLClass_a71a41cb_ce60_45a7_a94f_bba78c2e5e93"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_025643b7_9113_498f_ba78_cdb5862ffc6f"/>
+        <Class IRI="#OWLClass_c2b44363_7bc3_4cff_a196_464b4cdd41ae"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_030b48bf_e021_4b1f_9f94_1fe7d2086c8e"/>
+        <Class IRI="#OWLClass_c2b44363_7bc3_4cff_a196_464b4cdd41ae"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_033f749c_6989_4444_8923_3c2df5e3ee5e"/>
+        <Class IRI="#OWLClass_c2b44363_7bc3_4cff_a196_464b4cdd41ae"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_05517b93_171b_47b4_8ad5_68efa97c0880"/>
+        <Class IRI="#OWLClass_d6cba1a3_7099_4387_9e75_34a69f370101"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_061c16c1_46fc_48c3_8e2f_95f47a709aac"/>
+        <Class IRI="#OWLClass_d6cba1a3_7099_4387_9e75_34a69f370101"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_0699dfe3_2a19_4d3b_aba0_35cb9d9810ca"/>
+        <Class IRI="#OWLClass_860aea39_4573_4afd_87c9_06360dace28e"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_06d06243_00da_411e_9d7c_2829697f50f5"/>
+        <Class IRI="#Info_and_Ticket_Points"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_07505f82_4994_4df0_8441_84fc2ce2e8cb"/>
+        <Class IRI="#OWLClass_beb74084_f95d_4c33_946d_3fdb81cad828"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_0782922a_33e0_44ab_bb7b_fd1fcd700681"/>
+        <Class IRI="#OWLClass_860aea39_4573_4afd_87c9_06360dace28e"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_0828e527_561e_4f4d_bef5_49c2e0bb09e9"/>
+        <Class IRI="#OWLClass_beb74084_f95d_4c33_946d_3fdb81cad828"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_0b4cf629_85f9_4c34_9533_5d21a31ea656"/>
+        <Class IRI="#OWLClass_860aea39_4573_4afd_87c9_06360dace28e"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_0bd071d4_519a_453c_8d25_6fa8430208cd"/>
+        <Class IRI="#OWLClass_860aea39_4573_4afd_87c9_06360dace28e"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_0f134fc4_a1e7_49ba_b9e4_7b90a94b4229"/>
+        <Class IRI="#OWLClass_c2b44363_7bc3_4cff_a196_464b4cdd41ae"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_11145231_a408_43a9_b976_131fb55dc8f2"/>
+        <Class IRI="#OWLClass_a71a41cb_ce60_45a7_a94f_bba78c2e5e93"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_12a15ea0_865b_4351_98a0_fc4a800224f0"/>
+        <Class IRI="#OWLClass_a71a41cb_ce60_45a7_a94f_bba78c2e5e93"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_133861d9_eaad_4ce8_97c8_67efc9aa26d4"/>
+        <Class IRI="#OWLClass_3b5128de_5e3f_43e8_bcf4_955c7bffa318"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_13cb2921_f4ad_4f9d_a9d4_1173a2566475"/>
+        <Class IRI="#OWLClass_860aea39_4573_4afd_87c9_06360dace28e"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_14d0f402_9ba8_434a_8ebc_b44e7ab3e9fe"/>
+        <Class IRI="#OWLClass_d6cba1a3_7099_4387_9e75_34a69f370101"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_1859ccb3_56d5_4011_bc55_6b2e20e05ffd"/>
+        <Class IRI="#OWLClass_3b5128de_5e3f_43e8_bcf4_955c7bffa318"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_18b2f5df_e79a_4e73_ae48_567b34fcfc08"/>
+        <Class IRI="#OWLClass_c2b44363_7bc3_4cff_a196_464b4cdd41ae"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_18b5ddb7_9a67_4c70_be45_a97bedcfdc3f"/>
+        <Class IRI="#OWLClass_d6cba1a3_7099_4387_9e75_34a69f370101"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_1a137edb_5e96_4048_9f53_2dc074bd570c"/>
+        <Class IRI="#OWLClass_d6cba1a3_7099_4387_9e75_34a69f370101"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_1a2f5ef7_9872_43f9_967b_4605efafaf0b"/>
+        <Class IRI="#OWLClass_a71a41cb_ce60_45a7_a94f_bba78c2e5e93"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_1df1e4f1_bbe8_42e6_aae6_5a7b35d03f64"/>
+        <Class IRI="#Park_and_Ride"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_1e6f0b28_4a4d_4255_a7c6_948b36397471"/>
+        <Class IRI="#OWLClass_d6cba1a3_7099_4387_9e75_34a69f370101"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_1f39e432_e4a0_4997_a3c9_57edee0e0440"/>
+        <Class IRI="#OWLClass_d49afb8b_37b4_47fa_851d_3eb128dd518d"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_1f765229_43b2_4b23_bc4a_1682528d32e0"/>
+        <Class IRI="#OWLClass_860aea39_4573_4afd_87c9_06360dace28e"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_1f9f0480_200f_4f98_b6ae_fe0033e6e4a5"/>
+        <Class IRI="#OWLClass_c2b44363_7bc3_4cff_a196_464b4cdd41ae"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_2492c3fe_7a27_4d56_8dff_d05ea1841f0b"/>
+        <Class IRI="#OWLClass_860aea39_4573_4afd_87c9_06360dace28e"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_24db5dfd_5f41_4fdb_a16b_e1840b4a9f23"/>
+        <Class IRI="#Color"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_28e9db29_9a51_43c8_be16_41196a9c7bf0"/>
+        <Class IRI="#Info_and_Ticket_Points"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_2adedf63_6459_4d30_8fde_fff5c49dec26"/>
+        <Class IRI="#OWLClass_beb74084_f95d_4c33_946d_3fdb81cad828"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_2b447681_975c_4c55_9b39_d195315596d0"/>
+        <Class IRI="#Color"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_2ed2839b_4cfd_4c5a_8b04_18b06ab29593"/>
+        <Class IRI="#OWLClass_d6cba1a3_7099_4387_9e75_34a69f370101"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_34dbcc83_46e4_4c14_972c_1118ffe49b95"/>
+        <Class IRI="#Color"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_34eb950a_4083_419a_a4ee_698f609200c4"/>
+        <Class IRI="#OWLClass_a71a41cb_ce60_45a7_a94f_bba78c2e5e93"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_3915c9b6_892d_45ea_b39e_489d6566b583"/>
+        <Class IRI="#OWLClass_d6cba1a3_7099_4387_9e75_34a69f370101"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_3a9529a4_1825_4654_ad0d_f0ee28c181f5"/>
+        <Class IRI="#OWLClass_a71a41cb_ce60_45a7_a94f_bba78c2e5e93"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_3aa65f6a_ce67_44c3_8382_d0cdc03bb713"/>
+        <Class IRI="#OWLClass_d49afb8b_37b4_47fa_851d_3eb128dd518d"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_3b5128de_5e3f_43e8_bcf4_955c7bffa318"/>
+        <Class IRI="#U-Bahn"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_3b78190d_b46d_4db6_9261_8e6cd6146101"/>
+        <Class IRI="#OWLClass_860aea39_4573_4afd_87c9_06360dace28e"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_3fd734cb_359b_40fd_8987_d4f8f2ee5be0"/>
+        <Class IRI="#OWLClass_3b5128de_5e3f_43e8_bcf4_955c7bffa318"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_407e4d21_2ebe_446a_8872_034cec038152"/>
+        <Class IRI="#OWLClass_beb74084_f95d_4c33_946d_3fdb81cad828"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_43f59671_f98b_4eae_a339_5f36623ee138"/>
+        <Class IRI="#OWLClass_beb74084_f95d_4c33_946d_3fdb81cad828"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_46abb34c_62f5_49be_8929_e3ad03f5e0d9"/>
+        <Class IRI="#OWLClass_d6cba1a3_7099_4387_9e75_34a69f370101"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_49ef5ea5_f75d_49f1_bfb1_55f996c4d338"/>
+        <Class IRI="#OWLClass_a71a41cb_ce60_45a7_a94f_bba78c2e5e93"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_4a49db94_5775_4042_b8ac_ca545c0f4af2"/>
+        <Class IRI="#Park_and_Ride"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_4a61e85d_fc28_4ddf_a0c9_f1d6254d2a5c"/>
+        <Class IRI="#Park_and_Ride"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_4cbbcc5a_01b6_471b_b7bd_655529394f01"/>
+        <Class IRI="#OWLClass_a71a41cb_ce60_45a7_a94f_bba78c2e5e93"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_4fd595ac_4a0e_40b0_827e_13f603aee918"/>
+        <Class IRI="#Info_and_Ticket_Points"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_510ce951_d993_4708_a6f0_89739c3493e2"/>
+        <Class IRI="#OWLClass_3b5128de_5e3f_43e8_bcf4_955c7bffa318"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_53cf93b4_3e25_4526_9a1a_71f6dedb95b2"/>
+        <Class IRI="#OWLClass_c2b44363_7bc3_4cff_a196_464b4cdd41ae"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_572c29c0_9c2c_4737_85be_b0cfdea04cd2"/>
+        <Class IRI="#OWLClass_a71a41cb_ce60_45a7_a94f_bba78c2e5e93"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_5758501d_273c_49c3_b016_4a3f9d1cb28a"/>
+        <Class IRI="#OWLClass_c2b44363_7bc3_4cff_a196_464b4cdd41ae"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_57b469a9_89b3_47c0_b799_3d6552692607"/>
+        <Class IRI="#OWLClass_860aea39_4573_4afd_87c9_06360dace28e"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_5976a6b9_f2d5_45bd_9833_3dc57d1ebe89"/>
+        <Class IRI="#OWLClass_860aea39_4573_4afd_87c9_06360dace28e"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_59864ae8_253a_44fe_873d_543894a495e7"/>
+        <Class IRI="#OWLClass_a71a41cb_ce60_45a7_a94f_bba78c2e5e93"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_5a13158b_2b35_45c6_8336_319c5db249aa"/>
+        <Class IRI="#OWLClass_a71a41cb_ce60_45a7_a94f_bba78c2e5e93"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_5a5c2232_9914_476b_ba84_c7d484ae7a4e"/>
+        <Class IRI="#OWLClass_3b5128de_5e3f_43e8_bcf4_955c7bffa318"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_5ae6dc6d_7a69_4bb7_8846_583bd068c7a2"/>
+        <Class IRI="#OWLClass_d6cba1a3_7099_4387_9e75_34a69f370101"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_5bad646b_4836_43fa_856b_fcf0d0913f0c"/>
+        <Class IRI="#OWLClass_a71a41cb_ce60_45a7_a94f_bba78c2e5e93"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_5c489a28_4d21_4880_90b4_b8c77e3a90c2"/>
+        <Class IRI="#OWLClass_860aea39_4573_4afd_87c9_06360dace28e"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_5c6355be_37c2_4974_a3a2_43b94e2d27bc"/>
+        <Class IRI="#OWLClass_a71a41cb_ce60_45a7_a94f_bba78c2e5e93"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_5db36571_ebc4_4cdd_bd5c_960633701ec4"/>
+        <Class IRI="#OWLClass_beb74084_f95d_4c33_946d_3fdb81cad828"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_5dfff50e_89a2_480a_8c1b_197942ca5e4b"/>
+        <Class IRI="#OWLClass_d6cba1a3_7099_4387_9e75_34a69f370101"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_60c412ab_972c_4f10_ab88_0fe1bea96e2e"/>
+        <Class IRI="#OWLClass_a71a41cb_ce60_45a7_a94f_bba78c2e5e93"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_6307afb6_eaf7_4460_a730_d613a42ca14a"/>
+        <Class IRI="#OWLClass_860aea39_4573_4afd_87c9_06360dace28e"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_6464808b_892b_4c81_a3d4_dad9f54cfd6d"/>
+        <Class IRI="#Color"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_646f6838_24d0_4b88_8e71_f629f51c17c0"/>
+        <Class IRI="#Park_and_Ride"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_64e9e47c_8b92_42fb_a8c9_8238a2540c0a"/>
+        <Class IRI="#Info_and_Ticket_Points"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_653fb03f_f290_4afd_8511_8413f8885da5"/>
+        <Class IRI="#OWLClass_d6cba1a3_7099_4387_9e75_34a69f370101"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_6a9bb972_4569_4539_bba0_7453fe828152"/>
+        <Class IRI="#OWLClass_a71a41cb_ce60_45a7_a94f_bba78c2e5e93"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_6cc9ccf3_a1c0_4b68_90da_f39b724589e0"/>
+        <Class IRI="#OWLClass_c2b44363_7bc3_4cff_a196_464b4cdd41ae"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_6e695a1c_2195_4af6_9c1c_9858dba205f7"/>
+        <Class IRI="#OWLClass_d6cba1a3_7099_4387_9e75_34a69f370101"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_6fff2ef5_4b59_4dae_80f6_6243d7c414f3"/>
+        <Class IRI="#OWLClass_d6cba1a3_7099_4387_9e75_34a69f370101"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_72769ffc_c6ac_4d4d_8408_f32127bd1bbe"/>
+        <Class IRI="#OWLClass_beb74084_f95d_4c33_946d_3fdb81cad828"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_72da1166_775d_4d84_b595_07aa143568af"/>
+        <Class IRI="#OWLClass_3b5128de_5e3f_43e8_bcf4_955c7bffa318"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_782c9d8d_76ca_4f30_ae87_01de9ac180e2"/>
+        <Class IRI="#OWLClass_beb74084_f95d_4c33_946d_3fdb81cad828"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_7c7d90fd_f5ce_427f_8c21_77ea5a00a4d1"/>
+        <Class IRI="#OWLClass_c2b44363_7bc3_4cff_a196_464b4cdd41ae"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_7f2ae272_147d_4f90_9fdb_1db155bd7d3d"/>
+        <Class IRI="#OWLClass_860aea39_4573_4afd_87c9_06360dace28e"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_81753f01_36d4_40d0_96c1_457458cebf0d"/>
+        <Class IRI="#OWLClass_beb74084_f95d_4c33_946d_3fdb81cad828"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_8251cd6d_6759_44db_acb3_a843ec418f92"/>
+        <Class IRI="#Park_and_Ride"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_84057c89_ec09_44c2_927e_03a28bd62d69"/>
+        <Class IRI="#OWLClass_d6cba1a3_7099_4387_9e75_34a69f370101"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_84fb2290_4512_40ca_a052_1036e42da68d"/>
+        <Class IRI="#Park_and_Ride"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_860aea39_4573_4afd_87c9_06360dace28e"/>
+        <Class IRI="#U-Bahn"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_875eec07_f6d5_4c73_a27f_e0ae4d27de30"/>
+        <Class IRI="#OWLClass_d49afb8b_37b4_47fa_851d_3eb128dd518d"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_88763d50_01ca_46b4_a3b6_e94c881ff50c"/>
+        <Class IRI="#OWLClass_c2b44363_7bc3_4cff_a196_464b4cdd41ae"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_899b885d_4ef8_4d00_a8b8_4bd41773c9ef"/>
+        <Class IRI="#OWLClass_d49afb8b_37b4_47fa_851d_3eb128dd518d"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_89a871f1_12f9_4aff_b08d_709b6cde9645"/>
+        <Class IRI="#Park_and_Ride"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_8b4070dc_f799_48ba_bcbf_7992bc5c1288"/>
+        <Class IRI="#OWLClass_a71a41cb_ce60_45a7_a94f_bba78c2e5e93"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_8c54a28f_b54b_43aa_969d_769b6940827d"/>
+        <Class IRI="#OWLClass_d49afb8b_37b4_47fa_851d_3eb128dd518d"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_911ff1db_4ddf_475e_ab2e_feddf401428d"/>
+        <Class IRI="#Info_and_Ticket_Points"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_91d4bd6e_109b_407e_82ea_9b805d4a520a"/>
+        <Class IRI="#OWLClass_a71a41cb_ce60_45a7_a94f_bba78c2e5e93"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_92447f0c_aaa6_4416_98d0_0b25a1bc7638"/>
+        <Class IRI="#OWLClass_860aea39_4573_4afd_87c9_06360dace28e"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_96bef21e_d522_4186_9b99_3705be1ae686"/>
+        <Class IRI="#OWLClass_860aea39_4573_4afd_87c9_06360dace28e"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_96fe5b5f_beaa_43ef_8966_17e9e5b345ff"/>
+        <Class IRI="#OWLClass_d6cba1a3_7099_4387_9e75_34a69f370101"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_994331bc_f667_4be8_bbe0_1851195f20ed"/>
+        <Class IRI="#OWLClass_d49afb8b_37b4_47fa_851d_3eb128dd518d"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_9a347bc1_ff27_47ae_99b2_8ce451e2d7ca"/>
+        <Class IRI="#OWLClass_beb74084_f95d_4c33_946d_3fdb81cad828"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_9b8ce75f_99cb_4db8_b9c2_52ffbd951ad5"/>
+        <Class IRI="#OWLClass_a71a41cb_ce60_45a7_a94f_bba78c2e5e93"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_9c80cc76_9027_4931_94f3_ac0b1b95bf6e"/>
+        <Class IRI="#Info_and_Ticket_Points"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_9c8a5927_fd80_49f9_b51d_098f4f074684"/>
+        <Class IRI="#OWLClass_beb74084_f95d_4c33_946d_3fdb81cad828"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_9cec0606_22c6_4017_b7c3_9ba033d29028"/>
+        <Class IRI="#OWLClass_a71a41cb_ce60_45a7_a94f_bba78c2e5e93"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_9e1f1692_9a2c_43ac_ad9f_69a0cab6dcae"/>
+        <Class IRI="#OWLClass_c2b44363_7bc3_4cff_a196_464b4cdd41ae"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_9f1b9502_ef96_4207_901f_de575925abd8"/>
+        <Class IRI="#OWLClass_a71a41cb_ce60_45a7_a94f_bba78c2e5e93"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_9f43ed26_0ff4_4044_ba76_1d7682e3026b"/>
+        <Class IRI="#OWLClass_beb74084_f95d_4c33_946d_3fdb81cad828"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_9fc9d389_0046_4c68_a068_cca61438276c"/>
+        <Class IRI="#OWLClass_a71a41cb_ce60_45a7_a94f_bba78c2e5e93"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_a149fa65_ef7b_4894_a93e_00e75640fd5e"/>
+        <Class IRI="#OWLClass_c2b44363_7bc3_4cff_a196_464b4cdd41ae"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_a1ffc734_1500_4ce5_9a03_43a3a0a21385"/>
+        <Class IRI="#OWLClass_3b5128de_5e3f_43e8_bcf4_955c7bffa318"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_a259f917_f6c6_4c95_9a48_ca597818f94a"/>
+        <Class IRI="#OWLClass_3b5128de_5e3f_43e8_bcf4_955c7bffa318"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_a71a41cb_ce60_45a7_a94f_bba78c2e5e93"/>
+        <Class IRI="#U-Bahn"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_abcdfa94_2ddb_42fa_a490_e68fda34c7ea"/>
+        <Class IRI="#OWLClass_c2b44363_7bc3_4cff_a196_464b4cdd41ae"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_ac94d89f_2a2a_43fe_8fcc_305bccd46b35"/>
+        <Class IRI="#OWLClass_c2b44363_7bc3_4cff_a196_464b4cdd41ae"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_adb55e3d_900e_435c_9a5d_9245f4fc88b1"/>
+        <Class IRI="#OWLClass_3b5128de_5e3f_43e8_bcf4_955c7bffa318"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_ae614cbd_1951_409b_92cd_6aef7a93fcd8"/>
+        <Class IRI="#OWLClass_c2b44363_7bc3_4cff_a196_464b4cdd41ae"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_aed9a894_e015_4af8_8a37_1bb082bd4345"/>
+        <Class IRI="#Info_and_Ticket_Points"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_b13569af_8262_46a9_a60f_1681984040f4"/>
+        <Class IRI="#OWLClass_beb74084_f95d_4c33_946d_3fdb81cad828"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_b7b02317_a0ea_4c67_9139_778bf35a0fcb"/>
+        <Class IRI="#OWLClass_c2b44363_7bc3_4cff_a196_464b4cdd41ae"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_b86e8ed9_52fa_479c_af8d_b964d15471da"/>
+        <Class IRI="#OWLClass_beb74084_f95d_4c33_946d_3fdb81cad828"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_b8810957_f0a2_441c_b3d3_ad52fedbb355"/>
+        <Class IRI="#OWLClass_d6cba1a3_7099_4387_9e75_34a69f370101"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_b9210843_2491_4d17_985f_814277a01cd8"/>
+        <Class IRI="#OWLClass_3b5128de_5e3f_43e8_bcf4_955c7bffa318"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_b9709684_eb88_4d31_9b01_4d70dcd17357"/>
+        <Class IRI="#OWLClass_c2b44363_7bc3_4cff_a196_464b4cdd41ae"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_b995a8a7_61c1_4367_b7a5_0ddb178b81e7"/>
+        <Class IRI="#OWLClass_3b5128de_5e3f_43e8_bcf4_955c7bffa318"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_ba70054e_3eed_4689_beb9_b20902a4d699"/>
+        <Class IRI="#OWLClass_c2b44363_7bc3_4cff_a196_464b4cdd41ae"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_bb35e4b0_7e7c_4d1b_9377_7d2656abd9db"/>
+        <Class IRI="#OWLClass_3b5128de_5e3f_43e8_bcf4_955c7bffa318"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_bb650523_6fa5_4665_8b43_525456bb081c"/>
+        <Class IRI="#OWLClass_3b5128de_5e3f_43e8_bcf4_955c7bffa318"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_beb74084_f95d_4c33_946d_3fdb81cad828"/>
+        <Class IRI="#U-Bahn"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_befc32ce_5dac_4bdc_baf7_c1b26359e472"/>
+        <Class IRI="#OWLClass_d6cba1a3_7099_4387_9e75_34a69f370101"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_c112ef8a_963c_4fcc_bd86_3106ebcd72d3"/>
+        <Class IRI="#OWLClass_860aea39_4573_4afd_87c9_06360dace28e"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_c2b44363_7bc3_4cff_a196_464b4cdd41ae"/>
+        <Class IRI="#Restrooms"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_c3191268_91cc_4bbe_9084_651d58ccd83c"/>
+        <Class IRI="#Park_and_Ride"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_c3ee115e_ba5c_4205_ac3d_e3b568bd7b96"/>
+        <Class IRI="#OWLClass_860aea39_4573_4afd_87c9_06360dace28e"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_c56fdece_7021_487d_94a3_fe3f52db0fab"/>
+        <Class IRI="#OWLClass_beb74084_f95d_4c33_946d_3fdb81cad828"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_c6eccf5b_4ced_49cf_a8b3_6b5f69c9badb"/>
+        <Class IRI="#OWLClass_d6cba1a3_7099_4387_9e75_34a69f370101"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_c8974321_867f_44b0_a141_89aa5513bdd8"/>
+        <Class IRI="#OWLClass_860aea39_4573_4afd_87c9_06360dace28e"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_cade38f2_4000_46bd_b7e6_c9e123e06750"/>
+        <Class IRI="#OWLClass_d6cba1a3_7099_4387_9e75_34a69f370101"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_cf4e7385_a0c6_4d40_ba2a_aaedf49f049c"/>
+        <Class IRI="#OWLClass_d6cba1a3_7099_4387_9e75_34a69f370101"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_d2c47fd9_2a34_42d8_b921_c9adc5c2e2ec"/>
+        <Class IRI="#OWLClass_d49afb8b_37b4_47fa_851d_3eb128dd518d"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_d4241493_78ca_4bb0_8d29_a138d6a32d52"/>
+        <Class IRI="#OWLClass_c2b44363_7bc3_4cff_a196_464b4cdd41ae"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_d49afb8b_37b4_47fa_851d_3eb128dd518d"/>
+        <Class IRI="#Restrooms"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_d56451c2_ceb5_4a0c_b5ac_f923d8a16156"/>
+        <Class IRI="#OWLClass_beb74084_f95d_4c33_946d_3fdb81cad828"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_d67792d8_90cd_47e0_a13c_b0c48d99d2b2"/>
+        <Class IRI="#OWLClass_860aea39_4573_4afd_87c9_06360dace28e"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_d69c494f_e162_40a8_9f1f_2b36ca7e29a6"/>
+        <Class IRI="#Park_and_Ride"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_d6cba1a3_7099_4387_9e75_34a69f370101"/>
+        <Class IRI="#U-Bahn"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_da50e375_6f41_4188_9faa_c59beeea77e7"/>
+        <Class IRI="#OWLClass_a71a41cb_ce60_45a7_a94f_bba78c2e5e93"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_db056f49_cc19_40ef_922a_314b8afc8609"/>
+        <Class IRI="#OWLClass_c2b44363_7bc3_4cff_a196_464b4cdd41ae"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_e0da3e1d_3ac7_45f4_9618_f3c7929c4775"/>
+        <Class IRI="#OWLClass_beb74084_f95d_4c33_946d_3fdb81cad828"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_e35229a4_a553_4b2e_83e9_b87c6004c6ff"/>
+        <Class IRI="#OWLClass_860aea39_4573_4afd_87c9_06360dace28e"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_e3db96c8_5a37_4f50_8fa4_b96a6b883086"/>
+        <Class IRI="#OWLClass_3b5128de_5e3f_43e8_bcf4_955c7bffa318"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_e439333d_0568_43f3_ae48_e22a069a83a5"/>
+        <Class IRI="#OWLClass_a71a41cb_ce60_45a7_a94f_bba78c2e5e93"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_e4b2d1b7_4e92_4a5a_9f33_6fbe3882fa67"/>
+        <Class IRI="#OWLClass_860aea39_4573_4afd_87c9_06360dace28e"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_e58987ec_ff0d_492a_a2d0_a1a566073592"/>
+        <Class IRI="#OWLClass_d49afb8b_37b4_47fa_851d_3eb128dd518d"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_e82a53b6_5713_46be_891d_d9dc08207b2d"/>
+        <Class IRI="#OWLClass_3b5128de_5e3f_43e8_bcf4_955c7bffa318"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_ea3add6b_f50a_47cd_b0b6_b706171988e8"/>
+        <Class IRI="#OWLClass_860aea39_4573_4afd_87c9_06360dace28e"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_eb2b8a96_6a18_40a4_8575_bcd2117df816"/>
+        <Class IRI="#OWLClass_3b5128de_5e3f_43e8_bcf4_955c7bffa318"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_ecfdb9cb_1425_46ee_89e5_d473e8691202"/>
+        <Class IRI="#Park_and_Ride"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_eea5c013_f457_467b_a615_c5b4bf4457cc"/>
+        <Class IRI="#Color"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_eec54ebc_1b0a_43e2_8e8d_1aac34ad3882"/>
+        <Class IRI="#OWLClass_3b5128de_5e3f_43e8_bcf4_955c7bffa318"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_f4f7f56a_3cbe_4662_9816_ce74c39d80a2"/>
+        <Class IRI="#OWLClass_3b5128de_5e3f_43e8_bcf4_955c7bffa318"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_f51b6963_9bb9_4823_9d02_bc7aa5d367e5"/>
+        <Class IRI="#OWLClass_beb74084_f95d_4c33_946d_3fdb81cad828"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_f52aeba5_5348_4bd7_9090_b8ef2a0443de"/>
+        <Class IRI="#OWLClass_3b5128de_5e3f_43e8_bcf4_955c7bffa318"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_fef7004c_0486_47c9_8276_caf06afb7f68"/>
+        <Class IRI="#No_elevator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Spittelau"/>
+        <Class IRI="#Service_Centre"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Customer_Service_Center"/>
+        <Class IRI="#No_elevator"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#No_elevator"/>
+        <Class IRI="#Park_and_Ride"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#OWLClass_c2b44363_7bc3_4cff_a196_464b4cdd41ae"/>
+        <Class IRI="#OWLClass_d49afb8b_37b4_47fa_851d_3eb128dd518d"/>
+    </DisjointClasses>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#connectedTo"/>
+        <Class IRI="#U-Bahn"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasRestroom"/>
+        <Class IRI="#Restrooms"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isLocatedAt"/>
+        <Class IRI="#Customer_Service_Center"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isLocatedAt"/>
+        <Class IRI="#Info_and_Ticket_Points"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#providesAccessTo"/>
+        <Class IRI="#City_Airport_Train"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#connectedTo"/>
+        <Class IRI="#U-Bahn"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasRestroom"/>
+        <Class IRI="#U-Bahn"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isLocatedAt"/>
+        <Class IRI="#U-Bahn"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#providesAccessTo"/>
+        <Class IRI="#U-Bahn"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasAccessibilityFeature"/>
+        <Class IRI="#Service_Centre"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasColorCode"/>
+        <Class IRI="#Color"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasOperatingHours"/>
+        <Class IRI="#Info_and_Ticket_Points"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasParkingCapacity"/>
+        <Class IRI="#Park_and_Ride"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasRestroomType"/>
+        <Class IRI="#Restrooms"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasAccessibilityFeature"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasColorCode"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasOperatingHours"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasParkingCapacity"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasRestroomType"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Accessible_Service</IRI>
+        <Literal>The class defines weather the station has accessibility service it can be either customer service center or service centre</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#City_Airport_Train</IRI>
+        <Literal>(City Airport Train) CAT is a service that provides the transportation services between vienna aurport to city center</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Color</IRI>
+        <Literal>Color of Different U-Bahn</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Customer_Service_Center</IRI>
+        <Literal>This class represents the list of stations with customer service centre</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Info_and_Ticket_Points</IRI>
+        <Literal>Thic class denotes the list of stations with information and ticket point.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#No_elevator</IRI>
+        <Literal>This class denotes the list of stations with no elevators.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_0005c4b5_5ed3_4071_8444_9e1671f8b4cf</IRI>
+        <Literal xml:lang="en">Taborstraße U2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_024f807f_c444_47d4_880a_782faef3554c</IRI>
+        <Literal xml:lang="en">Reumannplatz U1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_025643b7_9113_498f_ba78_cdb5862ffc6f</IRI>
+        <Literal xml:lang="en">Seestadt</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_030b48bf_e021_4b1f_9f94_1fe7d2086c8e</IRI>
+        <Literal xml:lang="en">Herrengasse</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_033f749c_6989_4444_8923_3c2df5e3ee5e</IRI>
+        <Literal xml:lang="en">Hütteldorf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_05517b93_171b_47b4_8ad5_68efa97c0880</IRI>
+        <Literal xml:lang="en">Kardinal-Nagl-Platz U3</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_061c16c1_46fc_48c3_8e2f_95f47a709aac</IRI>
+        <Literal xml:lang="en">Gasometer U3</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_0699dfe3_2a19_4d3b_aba0_35cb9d9810ca</IRI>
+        <Literal xml:lang="en">Erlaaer Straße U6</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_06d06243_00da_411e_9d7c_2829697f50f5</IRI>
+        <Literal xml:lang="en">Karlspatz</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_07505f82_4994_4df0_8441_84fc2ce2e8cb</IRI>
+        <Literal xml:lang="en">Ober St. Veit U4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_0782922a_33e0_44ab_bb7b_fd1fcd700681</IRI>
+        <Literal xml:lang="en">Währinger Straße-Volksoper U6</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_0828e527_561e_4f4d_bef5_49c2e0bb09e9</IRI>
+        <Literal xml:lang="en">Schwedenplatz U4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_0b4cf629_85f9_4c34_9533_5d21a31ea656</IRI>
+        <Literal xml:lang="en">Handelskai U6</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_0bd071d4_519a_453c_8d25_6fa8430208cd</IRI>
+        <Literal xml:lang="en">Michelbeuern-AKH U6</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_0f134fc4_a1e7_49ba_b9e4_7b90a94b4229</IRI>
+        <Literal xml:lang="en">Altes Landgut</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_11145231_a408_43a9_b976_131fb55dc8f2</IRI>
+        <Literal xml:lang="en">Donauinsel U1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_12a15ea0_865b_4351_98a0_fc4a800224f0</IRI>
+        <Literal xml:lang="en">Großfeldsiedlung U1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_133861d9_eaad_4ce8_97c8_67efc9aa26d4</IRI>
+        <Literal xml:lang="en">Aspern Nord U2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_13cb2921_f4ad_4f9d_a9d4_1173a2566475</IRI>
+        <Literal xml:lang="en">Neue Donau U6</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_14d0f402_9ba8_434a_8ebc_b44e7ab3e9fe</IRI>
+        <Literal xml:lang="en">Herrengasse U3</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_1859ccb3_56d5_4011_bc55_6b2e20e05ffd</IRI>
+        <Literal xml:lang="en">Donaumarina U2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_18b2f5df_e79a_4e73_ae48_567b34fcfc08</IRI>
+        <Literal xml:lang="en">Neubaug</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_18b5ddb7_9a67_4c70_be45_a97bedcfdc3f</IRI>
+        <Literal xml:lang="en">Erdberg U3</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_1a137edb_5e96_4048_9f53_2dc074bd570c</IRI>
+        <Literal xml:lang="en">Westbahnhof U3</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_1a2f5ef7_9872_43f9_967b_4605efafaf0b</IRI>
+        <Literal xml:lang="en">Leopoldau U1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_1df1e4f1_bbe8_42e6_aae6_5a7b35d03f64</IRI>
+        <Literal xml:lang="en">Neulaa_P</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_1e6f0b28_4a4d_4255_a7c6_948b36397471</IRI>
+        <Literal xml:lang="en">Johnstraße U3</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_1f39e432_e4a0_4997_a3c9_57edee0e0440</IRI>
+        <Literal xml:lang="en">Alser Straße</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_1f765229_43b2_4b23_bc4a_1682528d32e0</IRI>
+        <Literal xml:lang="en">Spittelau U6</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_1f9f0480_200f_4f98_b6ae_fe0033e6e4a5</IRI>
+        <Literal xml:lang="en">Schottenring</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_2492c3fe_7a27_4d56_8dff_d05ea1841f0b</IRI>
+        <Literal xml:lang="en">Philadelphiabrücke U6</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_24db5dfd_5f41_4fdb_a16b_e1840b4a9f23</IRI>
+        <Literal xml:lang="en">Green</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_28e9db29_9a51_43c8_be16_41196a9c7bf0</IRI>
+        <Literal xml:lang="en">Schottenring</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_2adedf63_6459_4d30_8fde_fff5c49dec26</IRI>
+        <Literal xml:lang="en">Meidling Hauptstraße U4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_2b447681_975c_4c55_9b39_d195315596d0</IRI>
+        <Literal xml:lang="en">Purple</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_2ed2839b_4cfd_4c5a_8b04_18b06ab29593</IRI>
+        <Literal xml:lang="en">Ottakring U3</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_34dbcc83_46e4_4c14_972c_1118ffe49b95</IRI>
+        <Literal xml:lang="en">Red</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_34eb950a_4083_419a_a4ee_698f609200c4</IRI>
+        <Literal xml:lang="en">Schwedenplatz U1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_3915c9b6_892d_45ea_b39e_489d6566b583</IRI>
+        <Literal xml:lang="en">Rochusgasse U3</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_3a9529a4_1825_4654_ad0d_f0ee28c181f5</IRI>
+        <Literal xml:lang="en">Karlsplatz U1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_3aa65f6a_ce67_44c3_8382_d0cdc03bb713</IRI>
+        <Literal xml:lang="en">Westbahnhof</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_3b5128de_5e3f_43e8_bcf4_955c7bffa318</IRI>
+        <Literal xml:lang="en">U2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_3b78190d_b46d_4db6_9261_8e6cd6146101</IRI>
+        <Literal xml:lang="en">Alterlaa U6</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_3fd734cb_359b_40fd_8987_d4f8f2ee5be0</IRI>
+        <Literal xml:lang="en">Schottenring U2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_407e4d21_2ebe_446a_8872_034cec038152</IRI>
+        <Literal xml:lang="en">Spittelau U4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_43f59671_f98b_4eae_a339_5f36623ee138</IRI>
+        <Literal xml:lang="en">Unter St. Veit U4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_46abb34c_62f5_49be_8929_e3ad03f5e0d9</IRI>
+        <Literal xml:lang="en">Landstraße (Wien Mitte) U3</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_49ef5ea5_f75d_49f1_bfb1_55f996c4d338</IRI>
+        <Literal xml:lang="en">Alte Donau U1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_4a49db94_5775_4042_b8ac_ca545c0f4af2</IRI>
+        <Literal xml:lang="en">Aderklaaer Straße_P</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_4a61e85d_fc28_4ddf_a0c9_f1d6254d2a5c</IRI>
+        <Literal xml:lang="en">Kendlerstraße_P</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_4cbbcc5a_01b6_471b_b7bd_655529394f01</IRI>
+        <Literal xml:lang="en">Keplerplatz U1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_4fd595ac_4a0e_40b0_827e_13f603aee918</IRI>
+        <Literal xml:lang="en">Landstraße (Wien Mitte)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_510ce951_d993_4708_a6f0_89739c3493e2</IRI>
+        <Literal xml:lang="en">Aspernstraße U2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_53cf93b4_3e25_4526_9a1a_71f6dedb95b2</IRI>
+        <Literal xml:lang="en">Simmering</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_572c29c0_9c2c_4737_85be_b0cfdea04cd2</IRI>
+        <Literal xml:lang="en">Altes Landgut U1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_5758501d_273c_49c3_b016_4a3f9d1cb28a</IRI>
+        <Literal xml:lang="en">Spittelau</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_57b469a9_89b3_47c0_b799_3d6552692607</IRI>
+        <Literal xml:lang="en">Jägerstraße U6</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_5976a6b9_f2d5_45bd_9833_3dc57d1ebe89</IRI>
+        <Literal xml:lang="en">Am Schöpfwerk U6</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_59864ae8_253a_44fe_873d_543894a495e7</IRI>
+        <Literal xml:lang="en">Kaisermühlen VIC U1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_5a13158b_2b35_45c6_8336_319c5db249aa</IRI>
+        <Literal xml:lang="en">Nestroyplatz U1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_5a5c2232_9914_476b_ba84_c7d484ae7a4e</IRI>
+        <Literal xml:lang="en">Schottentor U2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_5ae6dc6d_7a69_4bb7_8846_583bd068c7a2</IRI>
+        <Literal xml:lang="en">Schlachthausgasse U3</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_5bad646b_4836_43fa_856b_fcf0d0913f0c</IRI>
+        <Literal xml:lang="en">Südtiroler Platz - Hauptbahnhof U1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_5c489a28_4d21_4880_90b4_b8c77e3a90c2</IRI>
+        <Literal xml:lang="en">Alser Straße U6</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_5c6355be_37c2_4974_a3a2_43b94e2d27bc</IRI>
+        <Literal xml:lang="en">Alaudagasse U1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_5db36571_ebc4_4cdd_bd5c_960633701ec4</IRI>
+        <Literal xml:lang="en">Kettenbrückengasse U4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_5dfff50e_89a2_480a_8c1b_197942ca5e4b</IRI>
+        <Literal xml:lang="en">Kendlerstraße U3</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_60c412ab_972c_4f10_ab88_0fe1bea96e2e</IRI>
+        <Literal xml:lang="en">Kagraner Platz U1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_6307afb6_eaf7_4460_a730_d613a42ca14a</IRI>
+        <Literal xml:lang="en">Tscherttegasse U6</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_6464808b_892b_4c81_a3d4_dad9f54cfd6d</IRI>
+        <Literal xml:lang="en">Brown</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_646f6838_24d0_4b88_8e71_f629f51c17c0</IRI>
+        <Literal xml:lang="en">Erdberg_P</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_64e9e47c_8b92_42fb_a8c9_8238a2540c0a</IRI>
+        <Literal xml:lang="en">Praterstern</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_653fb03f_f290_4afd_8511_8413f8885da5</IRI>
+        <Literal xml:lang="en">Simmering U3</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_6a9bb972_4569_4539_bba0_7453fe828152</IRI>
+        <Literal xml:lang="en">Kagran U1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_6cc9ccf3_a1c0_4b68_90da_f39b724589e0</IRI>
+        <Literal xml:lang="en">Kaisermühlen VIC</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_6e695a1c_2195_4af6_9c1c_9858dba205f7</IRI>
+        <Literal xml:lang="en">Stubentor U3</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_6fff2ef5_4b59_4dae_80f6_6243d7c414f3</IRI>
+        <Literal xml:lang="en">Neubaugasse U3</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_72769ffc_c6ac_4d4d_8408_f32127bd1bbe</IRI>
+        <Literal xml:lang="en">Heiligenstadt U4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_72da1166_775d_4d84_b595_07aa143568af</IRI>
+        <Literal xml:lang="en">Hardeggasse U2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_782c9d8d_76ca_4f30_ae87_01de9ac180e2</IRI>
+        <Literal xml:lang="en">Schönbrunn U4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_7c7d90fd_f5ce_427f_8c21_77ea5a00a4d1</IRI>
+        <Literal xml:lang="en">Kagraner Platz</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_7f2ae272_147d_4f90_9fdb_1db155bd7d3d</IRI>
+        <Literal xml:lang="en">Dresdner Straße U6</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_81753f01_36d4_40d0_96c1_457458cebf0d</IRI>
+        <Literal xml:lang="en">Braunschweiggasse U4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_8251cd6d_6759_44db_acb3_a843ec418f92</IRI>
+        <Literal xml:lang="en">Hütteldor_P</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_84057c89_ec09_44c2_927e_03a28bd62d69</IRI>
+        <Literal xml:lang="en">Volkstheater U3</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_84fb2290_4512_40ca_a052_1036e42da68d</IRI>
+        <Literal xml:lang="en">Perfektastraße_P</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_860aea39_4573_4afd_87c9_06360dace28e</IRI>
+        <Literal xml:lang="en">U6</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_875eec07_f6d5_4c73_a27f_e0ae4d27de30</IRI>
+        <Literal xml:lang="en">Volkstheater</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_88763d50_01ca_46b4_a3b6_e94c881ff50c</IRI>
+        <Literal xml:lang="en">Donauspital</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_899b885d_4ef8_4d00_a8b8_4bd41773c9ef</IRI>
+        <Literal xml:lang="en">Schweden platz</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_89a871f1_12f9_4aff_b08d_709b6cde9645</IRI>
+        <Literal xml:lang="en">Leopoldau_P</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_8b4070dc_f799_48ba_bcbf_7992bc5c1288</IRI>
+        <Literal xml:lang="en">Stephansplatz U1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_8c54a28f_b54b_43aa_969d_769b6940827d</IRI>
+        <Literal xml:lang="en">Stephansplatz</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_911ff1db_4ddf_475e_ab2e_feddf401428d</IRI>
+        <Literal xml:lang="en">Stephansplatz</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_91d4bd6e_109b_407e_82ea_9b805d4a520a</IRI>
+        <Literal xml:lang="en">Oberlaa U1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_92447f0c_aaa6_4416_98d0_0b25a1bc7638</IRI>
+        <Literal xml:lang="en">Westbahnhof U6</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_96bef21e_d522_4186_9b99_3705be1ae686</IRI>
+        <Literal xml:lang="en">Siebenhirten U6</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_96fe5b5f_beaa_43ef_8966_17e9e5b345ff</IRI>
+        <Literal xml:lang="en">Schweglerstraße U3</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_994331bc_f667_4be8_bbe0_1851195f20ed</IRI>
+        <Literal xml:lang="en">Karlsplatz</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_9a347bc1_ff27_47ae_99b2_8ce451e2d7ca</IRI>
+        <Literal xml:lang="en">Hütteldorf U4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_9b8ce75f_99cb_4db8_b9c2_52ffbd951ad5</IRI>
+        <Literal xml:lang="en">Neulaa U1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_9c80cc76_9027_4931_94f3_ac0b1b95bf6e</IRI>
+        <Literal xml:lang="en">Westbahnhof</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_9c8a5927_fd80_49f9_b51d_098f4f074684</IRI>
+        <Literal xml:lang="en">Stadtpark U4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_9cec0606_22c6_4017_b7c3_9ba033d29028</IRI>
+        <Literal xml:lang="en">Troststraße U1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_9e1f1692_9a2c_43ac_ad9f_69a0cab6dcae</IRI>
+        <Literal xml:lang="en">Erdberg</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_9f1b9502_ef96_4207_901f_de575925abd8</IRI>
+        <Literal xml:lang="en">Taubstummengasse U1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_9f43ed26_0ff4_4044_ba76_1d7682e3026b</IRI>
+        <Literal xml:lang="en">Karlsplatz U4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_9fc9d389_0046_4c68_a068_cca61438276c</IRI>
+        <Literal xml:lang="en">Vorgartenstraße U1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_a149fa65_ef7b_4894_a93e_00e75640fd5e</IRI>
+        <Literal xml:lang="en">Handelskai</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_a1ffc734_1500_4ce5_9a03_43a3a0a21385</IRI>
+        <Literal xml:lang="en">Donaustadtbrücke U2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_a259f917_f6c6_4c95_9a48_ca597818f94a</IRI>
+        <Literal xml:lang="en">Krieau U2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_a71a41cb_ce60_45a7_a94f_bba78c2e5e93</IRI>
+        <Literal xml:lang="en">U1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_abcdfa94_2ddb_42fa_a490_e68fda34c7ea</IRI>
+        <Literal xml:lang="en">Leopoldau</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_ac94d89f_2a2a_43fe_8fcc_305bccd46b35</IRI>
+        <Literal xml:lang="en">Hietzing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_adb55e3d_900e_435c_9a5d_9245f4fc88b1</IRI>
+        <Literal xml:lang="en">Seestadt U2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_ae614cbd_1951_409b_92cd_6aef7a93fcd8</IRI>
+        <Literal xml:lang="en">Hütteldorfer Straße</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_aed9a894_e015_4af8_8a37_1bb082bd4345</IRI>
+        <Literal xml:lang="en">Erdberg</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_b13569af_8262_46a9_a60f_1681984040f4</IRI>
+        <Literal xml:lang="en">Landstraße (Wien Mitte) U4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_b7b02317_a0ea_4c67_9139_778bf35a0fcb</IRI>
+        <Literal xml:lang="en">Siebenhirten</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_b86e8ed9_52fa_479c_af8d_b964d15471da</IRI>
+        <Literal xml:lang="en">Friedensbrücke U4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_b8810957_f0a2_441c_b3d3_ad52fedbb355</IRI>
+        <Literal xml:lang="en">Enkplatz U3</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_b9210843_2491_4d17_985f_814277a01cd8</IRI>
+        <Literal xml:lang="en">Donauspital U2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_b9709684_eb88_4d31_9b01_4d70dcd17357</IRI>
+        <Literal xml:lang="en">Stadlau</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_b995a8a7_61c1_4367_b7a5_0ddb178b81e7</IRI>
+        <Literal xml:lang="en">Stadlau U2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_ba70054e_3eed_4689_beb9_b20902a4d699</IRI>
+        <Literal xml:lang="en">Meidling Hauptstraße</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_bb35e4b0_7e7c_4d1b_9377_7d2656abd9db</IRI>
+        <Literal xml:lang="en">Museumsquartier U2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_bb650523_6fa5_4665_8b43_525456bb081c</IRI>
+        <Literal xml:lang="en">Volkstheater U2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_beb74084_f95d_4c33_946d_3fdb81cad828</IRI>
+        <Literal xml:lang="en">U4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_befc32ce_5dac_4bdc_baf7_c1b26359e472</IRI>
+        <Literal xml:lang="en">Zieglergasse U3</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_c112ef8a_963c_4fcc_bd86_3106ebcd72d3</IRI>
+        <Literal xml:lang="en">Gumpendorfer Straße U6</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_c2b44363_7bc3_4cff_a196_464b4cdd41ae</IRI>
+        <Literal xml:lang="en">Restroom</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_c3191268_91cc_4bbe_9084_651d58ccd83c</IRI>
+        <Literal xml:lang="en">Siebenhirten_P</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_c3ee115e_ba5c_4205_ac3d_e3b568bd7b96</IRI>
+        <Literal xml:lang="en">Floridsdorf U6</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_c56fdece_7021_487d_94a3_fe3f52db0fab</IRI>
+        <Literal xml:lang="en">Rossauer Lände U4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_c6eccf5b_4ced_49cf_a8b3_6b5f69c9badb</IRI>
+        <Literal xml:lang="en">Stephansplatz U3</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_c8974321_867f_44b0_a141_89aa5513bdd8</IRI>
+        <Literal xml:lang="en">Thaliastraße U6</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_cade38f2_4000_46bd_b7e6_c9e123e06750</IRI>
+        <Literal xml:lang="en">Zippererstraße U3</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_cf4e7385_a0c6_4d40_ba2a_aaedf49f049c</IRI>
+        <Literal xml:lang="en">Hütteldorfer Straße U3</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_d2c47fd9_2a34_42d8_b921_c9adc5c2e2ec</IRI>
+        <Literal xml:lang="en">Praterstern</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_d4241493_78ca_4bb0_8d29_a138d6a32d52</IRI>
+        <Literal xml:lang="en">Stadion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_d49afb8b_37b4_47fa_851d_3eb128dd518d</IRI>
+        <Literal xml:lang="en">Attended Restroom</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_d56451c2_ceb5_4a0c_b5ac_f923d8a16156</IRI>
+        <Literal xml:lang="en">Hietzing U4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_d67792d8_90cd_47e0_a13c_b0c48d99d2b2</IRI>
+        <Literal xml:lang="en">Josefstädter Straße U6</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_d69c494f_e162_40a8_9f1f_2b36ca7e29a6</IRI>
+        <Literal xml:lang="en">Spittela_P</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_d6cba1a3_7099_4387_9e75_34a69f370101</IRI>
+        <Literal xml:lang="en">U3</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_da50e375_6f41_4188_9faa_c59beeea77e7</IRI>
+        <Literal xml:lang="en">Praterstern U1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_db056f49_cc19_40ef_922a_314b8afc8609</IRI>
+        <Literal xml:lang="en">Alterlaa</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_e0da3e1d_3ac7_45f4_9618_f3c7929c4775</IRI>
+        <Literal xml:lang="en">Margaretengürtel U4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_e35229a4_a553_4b2e_83e9_b87c6004c6ff</IRI>
+        <Literal xml:lang="en">Burggasse-Stadthalle U6</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_e3db96c8_5a37_4f50_8fa4_b96a6b883086</IRI>
+        <Literal xml:lang="en">Rathaus U2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_e439333d_0568_43f3_ae48_e22a069a83a5</IRI>
+        <Literal xml:lang="en">Aderklaaer Straße U1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_e4b2d1b7_4e92_4a5a_9f33_6fbe3882fa67</IRI>
+        <Literal xml:lang="en">Perfektastraße U6</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_e58987ec_ff0d_492a_a2d0_a1a566073592</IRI>
+        <Literal xml:lang="en">Schottentor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_e82a53b6_5713_46be_891d_d9dc08207b2d</IRI>
+        <Literal xml:lang="en">Stadion U2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_ea3add6b_f50a_47cd_b0b6_b706171988e8</IRI>
+        <Literal xml:lang="en">Nußdorfer Straße U6</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_eb2b8a96_6a18_40a4_8575_bcd2117df816</IRI>
+        <Literal xml:lang="en">Hausfeldstraße U2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_ecfdb9cb_1425_46ee_89e5_d473e8691202</IRI>
+        <Literal xml:lang="en">Donaumarina_P</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_eea5c013_f457_467b_a615_c5b4bf4457cc</IRI>
+        <Literal xml:lang="en">Orange</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_eec54ebc_1b0a_43e2_8e8d_1aac34ad3882</IRI>
+        <Literal xml:lang="en">Praterstern U2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_f4f7f56a_3cbe_4662_9816_ce74c39d80a2</IRI>
+        <Literal xml:lang="en">Karlsplatz U2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_f51b6963_9bb9_4823_9d02_bc7aa5d367e5</IRI>
+        <Literal xml:lang="en">Schottenring U4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_f52aeba5_5348_4bd7_9090_b8ef2a0443de</IRI>
+        <Literal xml:lang="en">Messe-Prater U2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_fef7004c_0486_47c9_8276_caf06afb7f68</IRI>
+        <Literal xml:lang="en">Pilgram- gasse</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Park_and_Ride</IRI>
+        <Literal>This class denotes the list of stations where one can park there car and use U-Bahn</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Restrooms</IRI>
+        <Literal>This class contaions the list of restrooms which is under supervision and some without supervision.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Service_Centre</IRI>
+        <Literal>This class represents the list of stations with service centre for all purpose.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#U-Bahn</IRI>
+        <Literal>This clas denotes different U-Bahn lines and the stations they have</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#connectedTo</IRI>
+        <Literal>The common station which connect different U-Bahn lines</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasAccessibilityFeature</IRI>
+        <Literal>Ensures it has service centres and info points for any issues or queries.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasColorCode</IRI>
+        <Literal>Color of each u-bahn lines</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasOperatingHours</IRI>
+        <Literal>Defines the operating hours for the ticket points</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasParkingCapacity</IRI>
+        <Literal>Stations which has parking spaces available at the Park and Ride location.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasRestroom</IRI>
+        <Literal>Stations which has restrooms without attendants</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasRestroomType</IRI>
+        <Literal>Indicates if the restroom is attended or unattended.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isLocatedAt</IRI>
+        <Literal>Places where ticket points or customer service centre</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#providesAccessTo</IRI>
+        <Literal>stations which provides access to CAT</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

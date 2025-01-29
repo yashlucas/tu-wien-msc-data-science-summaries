@@ -1,0 +1,224 @@
+[
+  {
+    "kind": 1,
+    "language": "markdown",
+    "value": "# Introduction to Semantic Systems Assignment 2 (2024W)\r\n\r\nThis is the SPARQL Notebook template for Assignment 2. Fill out the following cells according to the corresponding tasks. In case you want to add additional cells, please clearly mark them and their purpose.\r\nNow we will briefly explain how SPARQL notebooks work.\r\n\r\nYou can define endpoints in the sidebar (as defaults), or right in the sparql-cells using `#[endpoint=<source>]`.\r\n\r\nSome examples:\r\n- `# [endpoint=http://localhost:7200/repositories/ISS_AS2]` Connects to the local GraphDB repository `ISS_AS2`. Appending `?infer=<True|False>` to the url enables/disables GraphDB reasoning (relevant for Task 3)\r\n- `# [endpoint=https://dbpedia.org/sparql]` Connects to DBpedia",
+    "metadata": {}
+  },
+  {
+    "kind": 1,
+    "language": "markdown",
+    "value": "# Task 1 Basic SPARQL on a didactic ontology (10 points)",
+    "metadata": {}
+  },
+  {
+    "kind": 1,
+    "language": "markdown",
+    "value": "> Q1: __SELECT__ Return all actors with their names\r\n\r\n\r\nWrite down all triples you've added to the repository that affect the output:",
+    "metadata": {}
+  },
+  {
+    "kind": 2,
+    "language": "sparql",
+    "value": "PREFIX ex: <http://semantics.id/ns/example/film#>\r\nPREFIX rdf: <http://www.w3.org/2000/01/rdf-schema-ns#>\r\n\r\nSELECT ?actor ?name\r\nWHERE {\r\n  ?actor a ex:Actor.\r\n  ?actor ex:fullName ?name.\r\n}\r\n",
+    "metadata": {}
+  },
+  {
+    "kind": 1,
+    "language": "markdown",
+    "value": "> Q2: __ASK__ Is there a film directed by Michael Haneke after 2020?\r\n\r\n\r\nWrite down all triples you've added to the repository that affect the output:",
+    "metadata": {}
+  },
+  {
+    "kind": 2,
+    "language": "sparql",
+    "value": "PREFIX mv: <http://semantics.id/ns/example/film#>\r\nPREFIX ex: <http://semantics.id/ns/example#>\r\n\r\nASK {\r\n  ?film mv:hasDirector ex:michael_haneke ;\r\n        mv:releaseYear ?year .\r\n  FILTER(?year > 2020)\r\n}\r\n",
+    "metadata": {}
+  },
+  {
+    "kind": 1,
+    "language": "markdown",
+    "value": "> Q3: __DESCRIBE__ Give me all information about the film 'Independence Day' released in 1996\r\n\r\n\r\nWrite down all triples you've added to the repository that affect the output:",
+    "metadata": {}
+  },
+  {
+    "kind": 2,
+    "language": "sparql",
+    "value": "PREFIX ev: <http://semantics.id/ns/example/film#>\r\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\r\ndescribe ?film\r\nwhere {\r\n  ?film rdfs:label \"Independence Day\";\r\n  ev:releaseYear 1996.}\r\n",
+    "metadata": {}
+  },
+  {
+    "kind": 1,
+    "language": "markdown",
+    "value": "Output:",
+    "metadata": {}
+  },
+  {
+    "kind": 1,
+    "language": "markdown",
+    "value": "> Q4: __CONSTRUCT__ Return the directors and script writers who have worked together. You may use :collaboratedWith as the newly constructed property\r\n\r\n\r\nWrite down all triples you've added to the repository that affect the output:",
+    "metadata": {}
+  },
+  {
+    "kind": 2,
+    "language": "sparql",
+    "value": "PREFIX mv: <http://semantics.id/ns/example/film#>\r\n\r\nCONSTRUCT {\r\n  ?director mv:collaboratedWith ?scriptWriter .\r\n}\r\nWHERE {\r\n  ?film mv:hasDirector ?director ;\r\n        mv:hasScriptWriter ?scriptWriter .\r\n  FILTER(?director != ?scriptWriter)\r\n\r\n  ?director mv:fullName ?directorName .\r\n  ?scriptWriter mv:fullName ?scriptWriterName .\r\n}\r\n",
+    "metadata": {}
+  },
+  {
+    "kind": 1,
+    "language": "markdown",
+    "value": "> Q5: __CONSTRUCT__ Return the directors and films where the director is both director and script writer. You may use :directorandwriterof as the newly constructed property\r\n\r\n\r\nWrite down all triples you've added to the repository that affect the output:",
+    "metadata": {}
+  },
+  {
+    "kind": 2,
+    "language": "sparql",
+    "value": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\r\nPREFIX mv: <http://semantics.id/ns/example/film#>\r\n\r\nCONSTRUCT {\r\n  ?director mv:directorandwriterof ?film .\r\n}\r\nWHERE {\r\n  ?film mv:hasDirector ?director ;\r\n        mv:hasScriptWriter ?scriptWriter .\r\n  FILTER(?director = ?scriptWriter)\r\n}\r\n",
+    "metadata": {}
+  },
+  {
+    "kind": 1,
+    "language": "markdown",
+    "value": "> Q6: __FILTER__ Return all films with 'Blade Runner' in their titles\r\n\r\n\r\nWrite down all triples you've added to the repository that affect the output:",
+    "metadata": {}
+  },
+  {
+    "kind": 2,
+    "language": "sparql",
+    "value": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\r\nPREFIX mv: <http://semantics.id/ns/example/film#>\r\n\r\nSELECT ?film ?title\r\nWHERE {\r\n  ?film rdfs:label ?title .\r\n  FILTER(REGEX(?title, \".*Blade Runner.*\", \"i\"))\r\n}\r\n",
+    "metadata": {}
+  },
+  {
+    "kind": 1,
+    "language": "markdown",
+    "value": "> Q7: __FILTER__ Return all the names of directors who made any films in 1990 or earlier\r\n\r\n\r\nWrite down all triples you've added to the repository that affect the output:",
+    "metadata": {}
+  },
+  {
+    "kind": 2,
+    "language": "sparql",
+    "value": "PREFIX mv: <http://semantics.id/ns/example/film#>\r\n\r\nSELECT DISTINCT ?directorName\r\nWHERE {\r\n  ?film mv:hasDirector ?director ;\r\n        mv:releaseYear ?year .\r\n  FILTER(?year <= 1990)\r\n\r\n  ?director mv:fullName ?directorName .\r\n}\r\n",
+    "metadata": {}
+  },
+  {
+    "kind": 1,
+    "language": "markdown",
+    "value": "> Q8: __ORDER and GROUP__ Return the actor with number of films they starred in, in descending order\r\n\r\n\r\nWrite down all triples you've added to the repository that affect the output:",
+    "metadata": {}
+  },
+  {
+    "kind": 2,
+    "language": "sparql",
+    "value": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\r\nPREFIX mv: <http://semantics.id/ns/example/film#>\r\n\r\nSELECT ?ActorName (COUNT(?film) AS ?filmCount)\r\nWHERE {\r\n  ?film mv:hasActor ?actor .\r\n  ?actor mv:fullName ?ActorName .\r\n}\r\nGroup BY ?ActorName\r\nORDER BY DESC(?filmCount)\r\n",
+    "metadata": {}
+  },
+  {
+    "kind": 1,
+    "language": "markdown",
+    "value": "> Q9: __ORDER and GROUP__ Return the number of actors in each film, in ascending order of their release year\r\n\r\n\r\nWrite down all triples you've added to the repository that affect the output:",
+    "metadata": {}
+  },
+  {
+    "kind": 2,
+    "language": "sparql",
+    "value": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\r\nPREFIX mv: <http://semantics.id/ns/example/film#>\r\n\r\nSELECT ?film ?releaseYear(COUNT(?actor) AS ?Actor_Count)\r\nWHERE {\r\n  ?film rdfs:label ?title ;\r\n  mv:hasActor ?actor ;\r\n   mv:releaseYear ?releaseYear.\r\n}\r\nGROUP BY ?film ?title ?releaseYear\r\nORDER BY ASC(?releaseYear)\r\n\r\n",
+    "metadata": {}
+  },
+  {
+    "kind": 1,
+    "language": "markdown",
+    "value": "> Q10: __UNION__ Return a combined list of films and their directors, and films and their film studios\r\n\r\n\r\nWrite down all triples you've added to the repository that affect the output:",
+    "metadata": {}
+  },
+  {
+    "kind": 2,
+    "language": "sparql",
+    "value": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\r\nPREFIX mv: <http://semantics.id/ns/example/film#>\r\n\r\nSELECT DISTINCT ?film ?directorName ?studioname\r\nWHERE {\r\n  {\r\n    ?film mv:hasDirector ?director .\r\n    ?director mv:fullName ?directorName .\r\n  }\r\n  UNION\r\n  {\r\n    ?film mv:hasFilmStudio ?studio .\r\n    ?studio rdfs:label ?studioname .\r\n  }\r\n}\r\n",
+    "metadata": {}
+  },
+  {
+    "kind": 1,
+    "language": "markdown",
+    "value": "# Task 2: Querying knowledge graphs on the web (7.5 points)",
+    "metadata": {}
+  },
+  {
+    "kind": 1,
+    "language": "markdown",
+    "value": "> Q11: List the names of all Actors who starred in the movie Star Wars IV: A New Hope and order by their age\r\n\r\n### Explanation",
+    "metadata": {}
+  },
+  {
+    "kind": 2,
+    "language": "sparql",
+    "value": "# [endpoint=https://dbpedia.org/sparql]\r\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\r\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\r\nPREFIX dbo: <http://dbpedia.org/ontology/>\r\nPREFIX dbr: <http://dbpedia.org/resource/>\r\n\r\nSELECT DISTINCT ?actorName ?birthDate\r\nWHERE {\r\n  dbr:Star_Wars_IV:_A_New_Hope dbo:wikiPageWikiLink ?entity .\r\n  ?entity dbo:starring ?actor .\r\n  ?actor rdfs:label ?actorName .\r\n  ?actor dbo:birthDate ?birthDate .\r\n  FILTER(LANG(?actorName) = \"en\")\r\n  \r\n}\r\nORDER BY ?birthDate\r\n",
+    "metadata": {}
+  },
+  {
+    "kind": 1,
+    "language": "markdown",
+    "value": "> Q12: ASK Is there a movie that Steven Spielberg and Tom Hanks both directed?\r\n\r\n### Explanation",
+    "metadata": {}
+  },
+  {
+    "kind": 2,
+    "language": "sparql",
+    "value": "# [endpoint=https://dbpedia.org/sparql]\r\n\r\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\r\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\r\nPREFIX dbo: <http://dbpedia.org/ontology/>\r\nPREFIX dbr: <http://dbpedia.org/resource/>\r\n\r\n\r\nASK {\r\n  ?movie dbo:director dbr:Steven_Spielberg .\r\n  ?movie dbo:director dbr:Tom_Hanks .\r\n}\r\n",
+    "metadata": {}
+  },
+  {
+    "kind": 1,
+    "language": "markdown",
+    "value": "> Q13: Count the number of movies released after 1970 with at least one writer with the first name \"Alex\" and the number of movies starring an actor with the first name \"Leo\" released before or in 1970. The result of the query should be the sum of the two amounts.\r\n\r\n### Explanation:",
+    "metadata": {}
+  },
+  {
+    "kind": 2,
+    "language": "sparql",
+    "value": "# [endpoint=https://dbpedia.org/sparql]\r\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\r\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\r\nPREFIX dbo: <http://dbpedia.org/ontology/>\r\nPREFIX dbr: <http://dbpedia.org/resource/>\r\n\r\nSELECT (SUM(?after1970Count + ?before1970Count) AS ?totalMovies)\r\nWHERE {\r\n  # Count movies released after 1970 with a writer named \"Alex\"\r\n  {\r\n    SELECT (COUNT(?movie1) AS ?after1970Count)\r\n    WHERE {\r\n      ?movie1 rdf:type dbo:Film .\r\n      ?movie1 dbo:releaseDate ?date1 .\r\n      FILTER(YEAR(?date1) > 1970) .\r\n      ?movie1 dbo:writer ?writer .\r\n      ?writer rdfs:label ?firstName .\r\n      FILTER(STRSTARTS(LCASE(?firstName), \"alex\") AND LANG(?firstName) = \"en\")\r\n    }\r\n  }\r\n  # Count movies released on or before 1970 with an actor named \"Leo\"\r\n  {\r\n    SELECT (COUNT(DISTINCT ?movie2) AS ?before1970Count)\r\n    WHERE {\r\n      ?movie2 rdf:type dbo:Film .\r\n      ?movie2 dbo:releaseDate ?date2 .\r\n      FILTER(YEAR(?date2) <= 1970) .\r\n      ?movie2 dbo:starring ?actor .\r\n      ?actor rdfs:label ?firstNameActor .\r\n      FILTER(STRSTARTS(LCASE(?firstNameActor), \"leo\") AND LANG(?firstNameActor) = \"en\")\r\n    }\r\n  }\r\n}\r\n",
+    "metadata": {}
+  },
+  {
+    "kind": 1,
+    "language": "markdown",
+    "value": "# Task 3: Querying with/without inference (7.5 points)",
+    "metadata": {}
+  },
+  {
+    "kind": 1,
+    "language": "markdown",
+    "value": "> Query Q14: Select all the performers from the movie with their names\r\n\r\n\r\n",
+    "metadata": {}
+  },
+  {
+    "kind": 2,
+    "language": "sparql",
+    "value": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\r\nPREFIX : <http://semantics.id/ns/example/film#>\r\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\r\nPREFIX ex: <http://semantics.id/ns/example#>\r\nPREFIX foaf: <http://xmlns.com/foaf/0.1/>\r\nselect DISTINCT ?performer ?name\r\nwhere {\r\n ?film :hasPerformer ?performer.\r\n ?performer :fullName ?name\r\n}",
+    "metadata": {}
+  },
+  {
+    "kind": 1,
+    "language": "markdown",
+    "value": "> Query Q15: Select all people (actor, directors, writers) with names and date of birth\r\n\r\n### Explanation",
+    "metadata": {}
+  },
+  {
+    "kind": 2,
+    "language": "sparql",
+    "value": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\r\nPREFIX : <http://semantics.id/ns/example/film#>\r\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\r\nPREFIX ex: <http://semantics.id/ns/example#>\r\nPREFIX foaf: <http://xmlns.com/foaf/0.1/>\r\n\r\nSELECT ?person ?name ?birthdate\r\nWHERE {\r\n  ?person a foaf:Person.\r\n  ?person :fullName ?name.\r\n  OPTIONAL { ?person :dateOfBirth ?birthdate. }\r\n}\r\n",
+    "metadata": {}
+  },
+  {
+    "kind": 1,
+    "language": "markdown",
+    "value": "> Query Q16: Retrieve all movies and their respective genres\r\n",
+    "metadata": {}
+  },
+  {
+    "kind": 2,
+    "language": "sparql",
+    "value": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\r\nPREFIX : <http://semantics.id/ns/example/film#>\r\n\r\nSELECT ?label (GROUP_CONCAT(?genreLabel; separator=\", \") AS ?genres)\r\nWHERE {\r\n  ?film :hasGenre ?genre.\r\n  ?film rdfs:label ?label.\r\n  ?genre rdfs:label ?genreLabel.\r\n}\r\nGROUP BY ?label\r\n",
+    "metadata": {}
+  }
+]
